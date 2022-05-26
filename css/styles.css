@@ -47,25 +47,26 @@ body {
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
-  /* body {
-    background-color: var(--active-button);
-  } */
-  nav {
-    display: flex;
-    gap: 46vw;
+  .logoImg {
+    max-width: 6vw;
   }
-
   .logo {
-    max-width: 8vw;
+    flex-basis: 50vw;
+  }
+  .logo a:hover {
+    background-color: transparent;
   }
 
   nav ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    flex: 0 1 100vw;
+    flex: 0 1 150vw;
   }
 
+  nav a:hover {
+    background-color: var(--active-button);
+  }
   nav a {
     padding: 0.5rem 1rem;
     display: block;
