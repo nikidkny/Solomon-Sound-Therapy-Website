@@ -10,6 +10,9 @@
   --headings: #6b3f15;
   --hight-light: #e89923;
   --active-button: #ffd552;
+  /* fonts */
+  --title: "Philosopher", sans-serif;
+  --body-text: "Lato", sans-serif;
 }
 
 /* reset */
@@ -36,11 +39,11 @@ li {
 h1,
 h2,
 h3 {
-  font-family: "Philosopher", sans-serif;
+  font-family: var(--title);
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: var(--body-text);
 }
 
 /* mobil 320px first styles */
@@ -74,24 +77,24 @@ nav:target {
   /* menu fall down when clicking the hamburger menu */
   transform: translateY(0);
 }
-/* nav svg {
-  border: solid 3px red;
-} */
+
 nav ul {
   display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
-  flex-basis: 480px;
   max-width: 100%;
 }
-nav li {
-  width: 100%;
-}
-nav li:first-child a {
+
+nav ul li:nth-child(2) a {
   color: var(--hight-light);
 }
+nav ul li {
+  border-bottom: solid 2px var(--headings);
+}
+
 nav a {
-  font: bold 20px/150% "Lato", sans-serif;
+  width: 90vw;
+  font: bold 20px/10vh "Lato", sans-serif;
   padding: 0.5rem 1rem;
   display: block;
   color: var(--bc);
@@ -100,7 +103,7 @@ nav a:hover {
   background-color: var(--active-button);
 }
 .logoImg {
-  max-width: 18vw;
+  max-width: 10vw;
 }
 .logo a:hover {
   background-color: transparent;
@@ -116,21 +119,47 @@ nav li svg {
 .close:hover {
   background-color: transparent;
 }
-/* small tablet styles */
-@media screen and (min-width: 620px) {
-  /* 
-  
 
-    nav ul li:nth-child(2) a {
-    color: var(--hight-light);
+/* ------------small tablet styles--------------- */
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 750px) / 680));
   }
-  
-  
+
+  nav {
+    background-image: none;
+    /* padding: 0; */
+    position: static;
+    height: auto;
+    transform: translateY(0);
+  }
+  .hamburguer,
+  .close {
+    display: none;
+  }
+  nav ul {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav ul a {
+    width: auto;
+    font: bold 16px/1vh "Lato", sans-serif;
+  }
+  nav ul li:first-child {
+    border-bottom: none;
+  }
+  .book {
+    flex-basis: 20vw;
+  }
   .book a {
     color: var(--bcw);
     background-color: #e89923;
     border-radius: 10px;
-  } */
+  }
 }
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px) {
