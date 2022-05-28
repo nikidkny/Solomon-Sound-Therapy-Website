@@ -54,17 +54,18 @@ body {
   width: 70px;
 }
 nav {
+  background-image: url(../images/backgroundNav.jpg);
   position: absolute;
   z-index: 10;
-  top: 15px;
-  left: 15px;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100vw;
+  height: 100%;
   overflow: hidden;
   /* positioning the close button */
   display: flex;
-  justify-content: space-between;
-  text-align: center;
+  /* justify-content: space-around; */
+
   /* animate slide up and down */
   transform: translateY(-100%);
   transition: transform 0.2s ease;
@@ -86,7 +87,11 @@ nav ul {
 nav li {
   width: 100%;
 }
+nav li:first-child a {
+  color: var(--hight-light);
+}
 nav a {
+  font: bold 20px/150% "Lato", sans-serif;
   padding: 0.5rem 1rem;
   display: block;
   color: var(--bc);
@@ -104,26 +109,19 @@ nav a:hover {
 nav li svg {
   margin-left: 5px;
 }
+
+.close {
+  align-items: flex-end;
+}
 .close:hover {
   background-color: transparent;
 }
 /* small tablet styles */
 @media screen and (min-width: 620px) {
-  /* .logoImg {
-    max-width: 6vw;
-  }
-  .logo {
-    flex-basis: 30vw;
-     }
+  /* 
   
 
-  nav ul {
-    font-family: "Lato", sans-serif;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-      }
-  nav ul li:nth-child(2) a {
+    nav ul li:nth-child(2) a {
     color: var(--hight-light);
   }
   
