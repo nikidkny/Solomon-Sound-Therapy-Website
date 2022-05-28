@@ -165,7 +165,8 @@ nav a:hover {
     border-radius: 10px;
   }
 }
-/* large tablets and laptop styles */
+
+/* ------------------large tablets and laptop styles --------------------*/
 @media screen and (min-width: 960px) {
 }
 
