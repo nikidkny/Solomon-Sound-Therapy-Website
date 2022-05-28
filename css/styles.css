@@ -51,6 +51,7 @@ body {
 .navMobil {
   display: flex;
   justify-content: space-between;
+  margin: 3vw;
 }
 .hamburguer svg {
   height: 65px;
@@ -81,7 +82,7 @@ nav:target {
 nav ul {
   display: flex;
   flex-flow: column wrap;
-  align-items: flex-start;
+  align-items: center;
   max-width: 100%;
 }
 
@@ -127,14 +128,16 @@ nav li svg {
     font-size: calc(16px + 6 * ((100vw - 750px) / 680));
   }
 
+  header {
+    display: flex;
+  }
   nav {
     background-image: none;
-    /* padding: 0; */
     position: static;
     height: auto;
     transform: translateY(0);
   }
-  .hamburguer,
+  .navMobil,
   .close {
     display: none;
   }
@@ -149,12 +152,12 @@ nav li svg {
     width: auto;
     font: bold 16px/1vh "Lato", sans-serif;
   }
-  nav ul li:first-child {
+  nav ul li {
     border-bottom: none;
   }
   .book {
     flex-basis: 20vw;
-  }
+      }
   .book a {
     color: var(--bcw);
     background-color: #e89923;
