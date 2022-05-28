@@ -110,8 +110,8 @@ nav a:hover {
   background-color: transparent;
 }
 
-nav li svg {
-  margin-left: 5px;
+.fa-solid {
+  margin-left: 10px;
 }
 
 .close {
@@ -152,12 +152,12 @@ nav li svg {
     width: auto;
     font: bold 16px/1vh "Lato", sans-serif;
   }
-  nav ul li {
+  nav ul li {    
     border-bottom: none;
   }
   .book {
-    flex-basis: 20vw;
-      }
+    flex-basis: 17vw;
+  }
   .book a {
     color: var(--bcw);
     background-color: #e89923;
