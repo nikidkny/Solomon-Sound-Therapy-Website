@@ -48,6 +48,7 @@ body {
 
 /* mobil 320px first styles */
 
+/* GLOBAL NAVIGATION */
 .navMobil {
   display: flex;
   justify-content: space-between;
@@ -56,10 +57,11 @@ body {
 .hamburguer svg {
   width: calc(4rem + 4vw);
   max-height: 10vh;
+  fill: var(--hight-light);
 }
 nav {
-  background-image: url(../images/backgroundNav.jpg);
-  /* background-color: #f6eee5; */
+  background: rgba(0, 0, 0, 0.4) url(../images/backgroundNav2.jpg) no-repeat top;
+  background-blend-mode: multiply;
   position: absolute;
   z-index: 10;
   top: 0;
@@ -94,7 +96,7 @@ nav ul li {
 }
 
 nav a {
-  width: 90vw;
+  width: 80vw;
   font: bold calc(1rem + 0.8vw) / 7vw var(--body-text);
   padding: 0.5rem 0 0.5rem 3rem;
   display: block;
@@ -112,21 +114,23 @@ nav a:hover {
 }
 
 .fa-solid {
-  margin: 0% 0% 0% 10px;
+  margin-left: 6px;
 }
 
 .close {
-  /* align-items: flex-end; */
   padding-left: 0%;
+  color: var(--hight-light);
 }
 .close:hover {
   background-color: transparent;
 }
 
-/* ------------small tablet styles--------------- */
+/* ------------medium tablet styles--------------- */
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 685px) {
+  /* GLOBAL NAVIGATION */
   nav {
+    background: none;
     max-width: 100%;
     margin-top: 2vw;
     background-image: none;
@@ -143,20 +147,25 @@ nav a:hover {
     align-items: center;
     width: 100%;
   }
-
-  nav ul a {
-    width: auto;
-    text-align: center;
-    font: bold calc(1rem + 0.2vw) / 2vh var(--body-text);
-    padding: 0.6rem 1rem;
-  }
   nav ul li {
     border-bottom: none;
   }
+  nav ul a {
+    width: auto;
+    text-align: center;
+    font: bold calc(1rem + 0.2vw) / 1vh var(--body-text);
+    padding: 0.6rem 1rem;
+  }
+  nav a:hover {
+    background-color: transparent;
+    color: var(--active-button);
+  }
 
-  .logo a,
+  .logo {
+    flex-basis: calc(8rem + 2vw);
+  }
   .book {
-    flex-basis: 20vw;
+    flex-basis: calc(9.5rem - 1vw);
     padding: 0%;
   }
   .book a {
@@ -170,6 +179,13 @@ nav a:hover {
 @media screen and (min-width: 960px) {
 }
 
-/* destop styles */
-@media screen and (min-width: 1200px) {
+/* ------------------destop styles ----------------------------------------*/
+@media screen and (min-width: 1024px) {
+  /* GLOBAL NAVIGATION */
+  nav ul a {
+    width: auto;
+    text-align: center;
+    font: bold calc(1rem + 0.2vw) / 2vh var(--body-text);
+    padding: 0.6rem 1rem;
+  }
 }
