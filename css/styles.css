@@ -55,8 +55,8 @@ body {
   margin: 3vw;
 }
 .hamburguer svg {
-  width: calc(4rem + 4vw);
-  max-height: 10vh;
+  width: calc(3rem + 2vw);
+  max-height: 8vh;
   fill: var(--hight-light);
 }
 nav {
@@ -114,7 +114,7 @@ nav a:hover {
 }
 
 .fa-solid {
-  margin-left: 6px;
+  margin-left: calc(0.6px + 1vw);
 }
 
 .close {
@@ -124,6 +124,7 @@ nav a:hover {
 .close:hover {
   background-color: transparent;
 }
+/* HOME MAIN CLASS="mainh*/
 
 /* ------------medium tablet styles--------------- */
 
@@ -149,34 +150,40 @@ nav a:hover {
   }
   nav ul li {
     border-bottom: none;
+    gap: calc(20vw + 1vw);
   }
   nav ul a {
     width: auto;
-    text-align: center;
     font: bold calc(1rem + 0.2vw) / 1vh var(--body-text);
-    padding: 0.6rem 1rem;
+    padding: 0.6rem calc(0.5rem + 1vw);
+    border-radius: 10px;
   }
-  nav a:hover {
+  nav a:hover,
+  nav ul li:nth-child(2) a:hover {
     background-color: transparent;
     color: var(--active-button);
+    border-bottom: solid 2px var(--active-button);
   }
 
   .logo {
-    flex-basis: calc(8rem + 2vw);
+    flex-basis: calc(10rem + 2vw);
   }
-  .book {
-    flex-basis: calc(9.5rem - 1vw);
-    padding: 0%;
+  .logo a:hover {
+    border-bottom: none;
   }
   .book a {
     color: var(--bcw);
     background-color: #e89923;
-    border-radius: 10px;
   }
 }
 
 /* ------------------large tablets and laptop styles --------------------*/
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 942px) {
+  /* GLOBAL NAVIGATION */
+  .book {
+    flex-basis: calc(10rem - 1vw);
+    margin-left: calc(1.3rem + 1vw);
+  }
 }
 
 /* ------------------destop styles ----------------------------------------*/
@@ -187,5 +194,8 @@ nav a:hover {
     text-align: center;
     font: bold calc(1rem + 0.2vw) / 2vh var(--body-text);
     padding: 0.6rem 1rem;
+  }
+  .logo {
+    flex-basis: calc(14rem + 2vw);
   }
 }
