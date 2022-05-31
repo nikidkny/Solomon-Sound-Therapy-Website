@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book an appointment</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/137a8d32f0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="navMobil">
+        <a href=""
+          ><img
+            class="logoImg"
+            src="./images/SolomonLogo.svg"
+            alt="Solomon Logo"
+        /></a>
+        <a class="hamburguer" href="#navBar" aria-label="Open main menu.">
+          <svg viwBox="0 0 10 10">
+            <rect x="10" y="10" width="50" height="8" />
+            <rect x="10" y="25" width="50" height="8" />
+            <rect x="10" y="40" width="50" height="8" /></svg
+        ></a>
+      </div>
+      <nav id="navBar">
+        <ul>
+          <li class="logo">
+            <a href=""
+              ><img
+                class="logoImg"
+                src="./images/SolomonLogo.svg"
+                alt="Solomon Logo"
+            /></a>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href=""
+              >Services
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li><a href="">About</a></li>
+          <li class="book">
+            <a href=""
+              >Book Now
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-cart-shopping" aria-hidden="true">.</i></a
+            >
+          </li>
+        </ul>
+        <a class="close" href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            /></svg
+        ></a>
+      </nav>
+    </header>
+    <main>
+        <div class="single-product-container">
+            <div class="single-product-image-container">
+              <img
+              alt="session-image"
+                class="session-image"
+              />
+              <div class="lds-ripple spinner">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div>
+              <h2 class="page-headings single-product-title"></h2>
+              <p class="single-product-session-description">
+              </p>
+              <div>
+                <p class="product-price"></p>
+                <p class="product-duration"></p>
+              </div>
+            </div>
+          </div>
+      <div class="book-session-container hide">
+        <p>
+          Check out our availability and book the date and time that works for
+          you
+        </p>
+        <div class="booking-process-container">
+          <div class="book-date-time-container">
+            <p>
+              Select a Date and Time
+              <span>Central European Summer Time (CEST)</span>
+            </p>
+            <div class="calendar-timeslots-container">
+              <div class="calendar-container">
+                <div class="calendar-month">
+                  <i class="fa-solid fa-chevron-left"></i>June 2022<i
+                    class="fa-solid fa-chevron-right"
+                  ></i>
+                </div>
+                <div class="calendar-weekdays">
+                  <span>Mon</span>
+                  <span>Tue</span>
+                  <span>Wed</span>
+                  <span>Thu</span>
+                  <span>Fri</span>
+                  <span>Sat</span>
+                  <span>Sun</span>
+                </div>
+                <div class="calendar-days-container">
+                  <div>
+                    <span>30</span>
+                    <span>31</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                  </div>
+                  <div>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <span>12</span>
+                  </div>
+                  <div>
+                    <span>13</span>
+                    <span>14</span>
+                    <span>15</span>
+                    <span>16</span>
+                    <span>17</span>
+                    <span>18</span>
+                    <span>19</span>
+                  </div>
+                  <div>
+                    <span>20</span>
+                    <span>21</span>
+                    <span>22</span>
+                    <span>23</span>
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                  </div>
+                  <div>
+                    <span>27</span>
+                    <span>28</span>
+                    <span>29</span>
+                    <span>30</span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+              <div class="timeslots-container">
+                <div class="timeslots-title">
+                    Sunday, 5 June
+              </div>
+              <div>
+                  <div>09:00</div>
+                  <div>09:20</div>
+                  <div>09:40</div>
+                  <div>10:00</div>
+                  <div>10:20</div>
+                  <div>10:40</div>
+                  <div>11:00</div>
+                  <div>11:20</div>
+                  <div>11:40</div>
+                  <div>12:00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="booking-summary-container">
+            <p>Booking Summary</p>
+            <p><i class="fa-solid fa-video"></i>Available Online</p>
+            <p class="booking-summary-session-title"></p>
+            <p class="booking-summary-session-price"></p>
+            <a href="" class="book-now-button-small" aria-label="button">NEXT</a>
+        </div>
+      </div>
+    </main>
+    <script src="../js/product.js"></script>
+  </body>
+</html>

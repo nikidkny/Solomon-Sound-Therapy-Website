@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book an appointment | Solomon Sound Therapy</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/137a8d32f0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="navMobil">
+        <a href=""
+          ><img
+            class="logoImg"
+            src="./images/SolomonLogo.svg"
+            alt="Solomon Logo"
+        /></a>
+        <a class="hamburguer" href="#navBar" aria-label="Open main menu.">
+          <svg viwBox="0 0 10 10">
+            <rect x="10" y="10" width="50" height="8" />
+            <rect x="10" y="25" width="50" height="8" />
+            <rect x="10" y="40" width="50" height="8" /></svg
+        ></a>
+      </div>
+      <nav id="navBar">
+        <ul>
+          <li class="logo">
+            <a href=""
+              ><img
+                class="logoImg"
+                src="./images/SolomonLogo.svg"
+                alt="Solomon Logo"
+            /></a>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href=""
+              >Services
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li><a href="">About</a></li>
+          <li class="book">
+            <a href=""
+              >Book Now
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-cart-shopping" aria-hidden="true">.</i></a
+            >
+          </li>
+        </ul>
+        <a class="close" href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            /></svg
+        ></a>
+      </nav>
+    </header>
+    <main>
+      <h2 class="page-headings">Book an appointment</h2>
+      <h4 id="product-list-sub-heading">
+        I offer sessions in English, Swedish & Danish, online and offline
+      </h4>
+      <div class="lds-ripple spinner">
+        <div></div>
+        <div></div>
+      </div>
+      <div id="product-list-container">
+        <template>
+          <div class="product-container">
+            <div class="product-image-container">
+              <a href="" aria-label="session-image">
+                <img alt="session-image" />
+              </a>
+            </div>
+            <div class="product-details-container">
+              <div>
+                <div class="product-price-duration-container">
+                  <p class="product-price"></p>
+                  <p class="product-duration"></p>
+                </div>
+                <div class="product-description-container">
+                  <p class="product-title"></p>
+                  <p class="product-methodology"></p>
+                  <p class="product-description"></p>
+                </div>
+              </div>
+              <a
+                class="book-now-button-small"
+                href=""
+                aria-label="book-now-button"
+              ></a>
+            </div>
+          </div>
+        </template>
+      </div>
+    </main>
+    <script src="../js/productList.js"></script>
+  </body>
+</html>
