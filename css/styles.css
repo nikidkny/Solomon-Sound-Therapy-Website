@@ -70,12 +70,10 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
-  overflow: hidden;
+  height: 100%;
+
   /* positioning the close button */
   display: flex;
-  /* justify-content: space-around; */
-
   /* animate slide up and down */
   transform: translateY(-100%);
   transition: transform 0.2s ease;
@@ -89,20 +87,18 @@ nav ul {
   display: flex;
   flex-flow: column wrap;
   max-width: 100%;
-}
+  }
 
-/* #home {
-  color: var(--hight-light);
-} */
 nav ul li {
-  border-bottom: solid 1.5px var(--hight-light);
+  border-bottom: solid 1.5px var(--headings);
 }
 nav ul a {
   width: 80vw;
-  font: bold calc(1rem + 0.8vw) / 7vw var(--body-text);
+  font: bold calc(1rem + 0.8vw) / 5vw var(--body-text);
   padding: 0.5rem 0 0.5rem 2rem;
   display: block;
   color: var(--bc);
+  transition: color 0.22s ease-in-out;
 }
 nav a:active {
   color: var(--active-button);
@@ -128,8 +124,9 @@ nav a:hover {
   background-color: transparent;
 }
 /* Second layer of nav style */
-nav ul ul li {
-  margin-left: 25vw;
+.dropDown {
+  display: block;
+  position: relative;
 }
 
 nav ul ul a {
@@ -141,12 +138,21 @@ nav ul ul a {
 nav ul ul li:last-child {
   border-bottom: none;
 }
+.submenu {
+  position: absolute;
+  background-color: var(--light-background);
+  border-radius: 10px;
+  display: none;
+  z-index: 10;
+}
+.dropDown:hover > .submenu {
+  display: block;
+}
 
 /* HOME MAIN CLASS="mainh*/
 .mainh {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /*to center a div set the width of the element and set margin to auto*/
   max-width: calc(280px + 4vw);
   margin: auto;
 }
@@ -188,7 +194,7 @@ h1 {
   }
   nav ul a {
     width: auto;
-    font: bold calc(1rem + 0.2vw) / 1vh var(--body-text);
+    font: bold calc(6px + 1vw) / 1vh var(--body-text);
     padding: 0.6rem calc(0.5rem + 1vw);
     border-radius: 10px;
   }
@@ -198,10 +204,6 @@ h1 {
     border-bottom: solid 2px var(--hight-light);
   }
 
-  .logo {
-    flex-basis: calc(10rem + 2vw);
-    border: none;
-  }
   .logo a:hover {
     border-bottom: none;
   }
@@ -211,13 +213,28 @@ h1 {
   }
   /* Second layer of nav style*/
   nav ul ul a {
+    width: auto;
     font: calc(1rem + 0.2vw) / 1vh var(--body-text);
   }
+  /* .submenu {
+    position: absolute;
+    background-color: var(--light-background); 
+    border-radius: 10px;      
+    display: none;
+    z-index: 10;
+  }
+  .dropDown:hover > .submenu {
+    display: block;
+  } */
 }
 
 /* ------------------large tablets and laptop styles --------------------*/
 @media screen and (min-width: 942px) {
   /* GLOBAL NAVIGATION */
+
+  .logo {
+    flex-basis: calc(10rem + 2vw);
+  }
   .book {
     flex-basis: calc(10rem - 1vw);
     margin-left: calc(1.3rem + 1vw);
