@@ -8,7 +8,7 @@
   --bcw: #ffffff;
   --light-background: #f6eee5;
   --headings: #6b3f15;
-  --hight-light: #e89923;
+  --high-light: #e89923;
   --active-button: #ffd552;
   /* fonts */
   --title: "Philosopher", sans-serif;
@@ -119,12 +119,36 @@ nav a:hover {
 
 .close {
   padding-left: 0%;
-  color: var(--hight-light);
+  color: var(--high-light);
 }
 .close:hover {
   background-color: transparent;
 }
-
+/* ------------about therapy page styles--------------- */
+#aboutTherapyMain {
+  margin: 10%;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); */
+}
+#aboutTherapyMain img {
+  width: 40%;
+}
+.higlightSpan {
+  color: var(--high-light);
+}
+#benefits {
+  background-color: var(--light-background);
+}
+#benefits .benefitIcon {
+  width: 15%;
+}
+/* ------------about me page styles--------------- */
+#aboutMeMain {
+  margin: 10%;
+}
+#aboutMeMain img {
+  width: 50%;
+}
 /* ------------medium tablet styles--------------- */
 
 @media screen and (min-width: 685px) {
