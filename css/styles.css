@@ -272,16 +272,16 @@ span {
 /*---------  PRODUCT LIST STYLES ---------*/
 
 .page-headings {
-  font-size: 35px;
+  font: 35px "Philosopher", sans-serif;
   margin-top: 60px;
+  margin-bottom: 10px;
   margin-left: 10vw;
   margin-right: 10vw;
 }
 
 #product-list-sub-heading {
-  font-size: 16px;
+  font: 16px "Philosopher", sans-serif;
   font-weight: 300;
-  margin-top: 20px;
   margin-left: 10vw;
   margin-right: 10vw;
 }
@@ -326,13 +326,13 @@ span {
 }
 
 #product-list-container .product-price-duration-container p:first-child {
-  font-size: 16px;
+  font: 16px "Lato", sans-serif;
   font-weight: 700;
   color: var(--headings);
 }
 
 #product-list-container .product-price-duration-container p:last-child {
-  font-size: 16px;
+  font: 16px "Lato", sans-serif;
   font-weight: 400;
   color: var(--headings);
 }
@@ -342,14 +342,21 @@ span {
 }
 
 #product-list-container .product-description-container p:first-child {
-  font-size: 18px;
+  font: 18px "Lato", sans-serif;
   font-weight: 700;
   white-space: initial;
   margin-bottom: 5px;
 }
 
+#product-list-container .product-description-container .product-methodology {
+  font: 14px "Lato", sans-serif;
+  font-weight: 400;
+  color: #746e65;
+  margin-top: 10px;
+}
+
 #product-list-container .product-description-container p:last-child {
-  font-size: 10px;
+  font: 10px "Lato", sans-serif;
   font-weight: 400;
   color: #746e65;
   margin-top: 10px;
@@ -442,7 +449,7 @@ span {
 }
 
 .single-product-container .single-product-session-description {
-  font-size: 12px;
+  font: 12px "Lato", sans-serif;
   line-height: 1.4rem;
 }
 
@@ -459,24 +466,25 @@ span {
 }
 
 .single-product-container > div > div p:first-child {
-  font-size: 16px;
+  font: 16px "Lato", sans-serif;
   font-weight: 700;
   color: var(--headings);
   margin-bottom: 6px;
 }
 
 .single-product-container > div > div p:last-child {
-  font-size: 16px;
+  font: 16px "Lato", sans-serif;
   font-weight: 400;
   color: var(--headings);
 }
 
 .book-session-container {
   padding: 50px 10vw 30px 10vw;
+  font-family: "Lato", sans-serif;
 }
 
 .book-session-container > p {
-  font-size: 12px;
+  font: 12px "Lato", sans-serif;
 }
 
 .book-session-container > p:first-child {
@@ -485,7 +493,7 @@ span {
 }
 
 .book-date-time-container p {
-  font-size: 18px;
+  font: 18px "Lato", sans-serif;
 }
 
 .book-date-time-container > p {
@@ -531,6 +539,10 @@ span {
   color: #7c7c7c;
 }
 
+.calendar-weekdays span {
+  color: black;
+}
+
 .calendar-days-container {
   margin-top: 13px;
 }
@@ -541,6 +553,7 @@ span {
 }
 
 .calendar-days-container span {
+  color: black;
   padding: 5px 8px 5px 8px;
 }
 
@@ -587,14 +600,14 @@ span {
 }
 
 .booking-summary-container p:first-child {
+  font: 20px "Lato", sans-serif;
   border-bottom: 1px solid black;
   padding-bottom: 13px;
-  font-size: 20px;
   font-weight: 700;
 }
 
 .booking-summary-container p:nth-child(2) {
-  font-size: 12px;
+  font: 12px "Lato", sans-serif;
   margin-top: 20px;
   border: 1px solid var(--high-light);
   border-radius: 15px;
@@ -608,24 +621,24 @@ span {
 }
 
 .booking-summary-container .book-now-button-small {
+  font: 12px "Lato", sans-serif;
   padding: 16px 100px;
   background: linear-gradient(180deg, #e89a26 0%, #ebaf55 100%);
   border-radius: 15px;
   color: white;
   width: 160px;
   height: 50px;
-  font-size: 12px;
   font-weight: 700;
   text-align: center;
 }
 
 .booking-summary-container p:nth-child(3) {
+  font: 18px "Lato", sans-serif;
   margin-top: 25px;
-  font-size: 18px;
 }
 
 .booking-summary-container p:nth-child(4) {
-  font-size: 12px;
+  font: 12px "Lato", sans-serif;
   margin-top: 8px;
   margin-bottom: 30px;
 }
@@ -764,7 +777,7 @@ span {
   }
 
   .single-product-container .single-product-session-description {
-    font-size: 16px;
+    font: 16px "Lato", sans-serif;
     line-height: 1.6rem;
   }
 
