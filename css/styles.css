@@ -125,7 +125,7 @@ nav a:hover {
   background-color: transparent;
 }
 /* ------------about therapy page styles--------------- */
-#aboutTherapyMain {
+.aboutTContent {
   margin: 10%;
   /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); */
@@ -138,17 +138,40 @@ nav a:hover {
 }
 #benefits {
   background-color: var(--light-background);
+  padding: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+#benefits h2 {
+  grid-column: span 2;
+}
+#benefits :nth-child(6) {
+  grid-column: span 2;
+}
+#benefits > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #benefits .benefitIcon {
   width: 15%;
 }
 /* ------------about me page styles--------------- */
-#aboutMeMain {
-  margin: 10%;
+.aboutContent {
+  padding: 10%;
 }
 #aboutMeMain img {
   width: 50%;
 }
+#qualifications {
+  background-color: var(--light-background);
+  padding: 10%;
+}
+/* .gradientBackground {
+  background: radial-gradient(circle at center, #e8992394 0%, transparent 60%);
+} */
+
 /* ------------medium tablet styles--------------- */
 
 @media screen and (min-width: 685px) {
