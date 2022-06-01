@@ -11,8 +11,8 @@
   --high-light: #e89923;
   --active-button: #ffd552;
   /* fonts */
-  --button-text: bold 0.8rem / 3vw "Lato", sans-serif;
-  --captions: 0.8rem/3vw "Lato", sans-serif;
+  --button-text: bolder 0.8rem / 3vw "Lato", sans-serif;
+  --captions: small-caps calc(0.5em + 0.5vw) / 2vw "Lato", sans-serif;
 }
 
 /* reset */
@@ -33,25 +33,25 @@ li {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 2px dotted red;
+  /* outline: 2px dotted red; */
 }
 
 /* fonts */
 
 h1 {
-  font: /* 4.375rem destop size */ bold calc(1.4rem + 1vw) / 7vw "Philosopher",
+  font: /* 4.375rem destop size */ bold calc(1.4em + 1vw) / 7vh "Philosopher",
     sans-serif;
 }
 h2 {
-  font: /* 3.125rem destop size */ bold calc(1.39rem + 1vw) / 6vw "Philosopher",
+  font: /* 3.125rem destop size */ bold calc(1.3em + 1vw) / 6vh "Philosopher",
     sans-serif;
 }
 h3 {
-  font: /* 2.187rem destop size */ bold calc(1rem + 1vw) / 5vw "Philosopher",
+  font: /* 2.187rem destop size */ bold calc(0.7em + 1vw) / 3vh "Philosopher",
     sans-serif;
 }
 p {
-  font: /* 1rem destop size */ 1rem / 3vw "Lato", sans-serif;
+  font: /* 1rem destop size */ calc(0.7em + 0.5vw) / 4vh "Lato", sans-serif;
 }
 
 body {
@@ -59,12 +59,11 @@ body {
 }
 
 /* mobil 320px first styles */
-
 /* GLOBAL NAVIGATION */
 .navMobil {
   display: flex;
-  justify-content: space-between;
   margin: 3vw;
+  justify-content: space-between;
 }
 .hamburguer svg {
   width: calc(3rem + 2vw);
@@ -98,9 +97,6 @@ nav ul {
   max-width: 100%;
 }
 
-nav ul li:nth-child(2) a {
-  color: var(--high-light);
-}
 nav ul li {
   border-bottom: solid 1.5px var(--headings);
 }
@@ -122,12 +118,14 @@ nav a:hover {
   width: calc(2rem + 5vw);
   height: auto;
 }
-.logo a:hover {
+.logo:hover {
   background-color: transparent;
+  border-bottom: none;
 }
 .fa-solid {
   margin-left: calc(0.6px + 1vw);
 }
+
 .close {
   padding-left: 0%;
   color: var(--high-light);
@@ -161,7 +159,6 @@ nav ul ul li:last-child {
   display: block;
 }
 
-/* HOME MAIN CLASS="mainh*/
 /* home main first section */
 .sect1 {
   max-width: calc(80% + 2vw);
@@ -180,16 +177,17 @@ h1 {
 }
 .bookbutton {
   color: var(--bcw);
-  max-width: 126px;
+  width: calc(9em + 2vw);
+  text-align: center;
   background-color: var(--high-light);
-  padding: 0.6em 1em;
+  padding: 0.6em 0.05em;
   border-radius: 10px;
   font: var(--button-text);
 }
 .container {
   position: relative;
   width: 100%;
-  aspect-ratio: 1/1.2;
+  aspect-ratio: 1/1.1;
   margin: 0 auto;
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -199,23 +197,18 @@ h1 {
 }
 .firstImg {
   position: relative;
-  width: 50vw;
+  width: 55vw;
   aspect-ratio: 1/1;
-  left: 20vw;
+  left: 16vw;
   top: 10vh;
-  background: url(../images/firstImg.jpg) no-repeat center;
-  background-size: 100%;
   border-radius: 250px 250px 0px 0px;
 }
 .secondImg {
   position: absolute;
-  width: 35vw;
-  /* margin: 0 auto; */
+  width: 30vw;
   aspect-ratio: 1/1;
-  left: 15vw;
-  top: 30vh;
-  background: url(../images/secondImg.jpg) no-repeat center;
-  background-size: 100%;
+  left: 10vw;
+  top: calc(7em + 8vh);
   border-radius: 250px 250px 0px 0px;
 }
 /* home main second section */
@@ -231,7 +224,7 @@ h1 {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
-  gap: 6vw;
+  gap: 5vw;
 }
 .testcontainer div {
   display: flex;
@@ -241,25 +234,48 @@ h1 {
   align-items: center;
 }
 .testim1 {
-  max-width: calc(8em + 1vw);
+  max-width: calc(7em + 1vw);
   border-radius: 50%;
 }
 .caption {
   font: var(--captions);
 }
 
-/* .thirdImg {
-  width: 50vw;
+/* home main third section */
+.sect3 {
+  max-width: calc(70% + 2vw);
+  margin: 3em auto;
+}
+.sect3 h2 {
+  text-align: center;
+  color: var(--headings);
+}
+.secondarybutton {
+  display: block;
+  width: calc(9em + 2vw);
   margin: 0 auto;
+  border: solid 2px var(--high-light);
+  color: var(--high-light);
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  font: var(--button-text);
+  text-align: center;
+}
+.thirdImg {
+  width: 55vw;
+  margin: 4em auto;
   aspect-ratio: 1/1;
   background: url(../images/thirdImg.jpg) no-repeat center;
   background-size: 100%;
 }
-span {
+.sect3 span {
   color: var(--high-light);
-} */
-/* home main third section */
-.sect3 ul {
+}
+.sect3 p {
+  margin: 2em auto;
+}
+/* home main fourth section */
+.sect4 ul {
   width: 80%;
   margin: 6vw auto;
   display: grid;
@@ -272,16 +288,16 @@ span {
 /*---------  PRODUCT LIST STYLES ---------*/
 
 .page-headings {
-  font-size: 35px;
+  font: 35px "Philosopher", sans-serif;
   margin-top: 60px;
+  margin-bottom: 10px;
   margin-left: 10vw;
   margin-right: 10vw;
 }
 
 #product-list-sub-heading {
-  font-size: 16px;
+  font: 16px "Philosopher", sans-serif;
   font-weight: 300;
-  margin-top: 20px;
   margin-left: 10vw;
   margin-right: 10vw;
 }
@@ -326,13 +342,13 @@ span {
 }
 
 #product-list-container .product-price-duration-container p:first-child {
-  font-size: 16px;
+  font: 16px "Lato", sans-serif;
   font-weight: 700;
   color: var(--headings);
 }
 
 #product-list-container .product-price-duration-container p:last-child {
-  font-size: 16px;
+  font: 16px "Lato", sans-serif;
   font-weight: 400;
   color: var(--headings);
 }
@@ -342,14 +358,21 @@ span {
 }
 
 #product-list-container .product-description-container p:first-child {
-  font-size: 18px;
+  font: 18px "Lato", sans-serif;
   font-weight: 700;
   white-space: initial;
   margin-bottom: 5px;
 }
 
+#product-list-container .product-description-container .product-methodology {
+  font: 14px "Lato", sans-serif;
+  font-weight: 400;
+  color: #746e65;
+  margin-top: 10px;
+}
+
 #product-list-container .product-description-container p:last-child {
-  font-size: 10px;
+  font: 10px "Lato", sans-serif;
   font-weight: 400;
   color: #746e65;
   margin-top: 10px;
@@ -442,7 +465,7 @@ span {
 }
 
 .single-product-container .single-product-session-description {
-  font-size: 12px;
+  font: 12px "Lato", sans-serif;
   line-height: 1.4rem;
 }
 
@@ -459,24 +482,25 @@ span {
 }
 
 .single-product-container > div > div p:first-child {
-  font-size: 16px;
+  font: 16px "Lato", sans-serif;
   font-weight: 700;
   color: var(--headings);
   margin-bottom: 6px;
 }
 
 .single-product-container > div > div p:last-child {
-  font-size: 16px;
+  font: 16px "Lato", sans-serif;
   font-weight: 400;
   color: var(--headings);
 }
 
 .book-session-container {
   padding: 50px 10vw 30px 10vw;
+  font-family: "Lato", sans-serif;
 }
 
 .book-session-container > p {
-  font-size: 12px;
+  font: 12px "Lato", sans-serif;
 }
 
 .book-session-container > p:first-child {
@@ -485,7 +509,7 @@ span {
 }
 
 .book-date-time-container p {
-  font-size: 18px;
+  font: 18px "Lato", sans-serif;
 }
 
 .book-date-time-container > p {
@@ -531,6 +555,10 @@ span {
   color: #7c7c7c;
 }
 
+.calendar-weekdays span {
+  color: black;
+}
+
 .calendar-days-container {
   margin-top: 13px;
 }
@@ -541,6 +569,7 @@ span {
 }
 
 .calendar-days-container span {
+  color: black;
   padding: 5px 8px 5px 8px;
 }
 
@@ -587,14 +616,14 @@ span {
 }
 
 .booking-summary-container p:first-child {
+  font: 20px "Lato", sans-serif;
   border-bottom: 1px solid black;
   padding-bottom: 13px;
-  font-size: 20px;
   font-weight: 700;
 }
 
 .booking-summary-container p:nth-child(2) {
-  font-size: 12px;
+  font: 12px "Lato", sans-serif;
   margin-top: 20px;
   border: 1px solid var(--high-light);
   border-radius: 15px;
@@ -608,35 +637,34 @@ span {
 }
 
 .booking-summary-container .book-now-button-small {
+  font: 12px "Lato", sans-serif;
   padding: 16px 100px;
   background: linear-gradient(180deg, #e89a26 0%, #ebaf55 100%);
   border-radius: 15px;
   color: white;
   width: 160px;
   height: 50px;
-  font-size: 12px;
   font-weight: 700;
   text-align: center;
 }
 
 .booking-summary-container p:nth-child(3) {
+  font: 18px "Lato", sans-serif;
   margin-top: 25px;
-  font-size: 18px;
 }
 
 .booking-summary-container p:nth-child(4) {
-  font-size: 12px;
+  font: 12px "Lato", sans-serif;
   margin-top: 8px;
   margin-bottom: 30px;
 }
 
 /* ------------small tablet styles--------------- */
 @media screen and (min-width: 647px) {
-  /* HOME PAGE */
-  /* section 1 style */
+  /* home page section 1 style */
   .sect1 {
     max-width: calc(90% + 1vw);
-    margin-bottom: 3em;
+    margin-bottom: 5em;
   }
 
   .sect1 div:first-child {
@@ -644,20 +672,19 @@ span {
     justify-content: center;
   }
   h1 {
-    font: /* 4.375rem destop size */ bold calc(1.3rem + 1vw) / 5vw "Philosopher",
-      sans-serif;
+    font: bold calc(1.3em + 1vw) / 5vh "Philosopher", sans-serif;
   }
   .sect1 p {
     font: /* 1rem destop size */ 1rem / 3vw "Lato", sans-serif;
   }
   .bookbutton {
-    padding: 0.6em 0.7em;
+    padding: 0.4em 0.5em;
     border-radius: 10px;
     font: var(--button-text);
   }
 
   .container {
-    aspect-ratio: 1/1.3;
+    aspect-ratio: 1/1.2;
   }
   .firstImg {
     width: 35vw;
@@ -670,6 +697,11 @@ span {
     aspect-ratio: 1/1;
     left: 5vw;
     top: 25vh;
+  }
+  /* home page section 2 style */
+  .testcontainer {
+    max-width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   }
 }
 /* ------------medium tablet styles--------------- */
@@ -690,8 +722,9 @@ span {
   }
   nav ul {
     flex-flow: row wrap;
-    justify-content: space-around;
+    gap: 0.9em;
     align-items: center;
+    justify-content: flex-end;
     width: 100%;
   }
   nav ul li {
@@ -709,6 +742,9 @@ span {
     color: var(--high-light);
     border-bottom: solid 2px var(--high-light);
   }
+  .logo {
+    margin: auto 5vw 0 3vw;
+  }
 
   .logo a:hover {
     border-bottom: none;
@@ -716,6 +752,7 @@ span {
   .book a {
     color: var(--bcw);
     background-color: #e89923;
+    /* padding: 0.4rem 0.2rem; */
   }
   /* Second layer of nav style*/
   nav ul ul a {
@@ -732,18 +769,27 @@ span {
   .dropDown:hover > .submenu {
     display: block;
   } */
+
+  /* home page section 1 style */
+  .container {
+    aspect-ratio: 1/1;
+  }
+  /* home page section 2 style */
+  .testcontainer {
+    max-width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  }
 }
 
 /* ------------------large tablets and laptop styles --------------------*/
 @media screen and (min-width: 942px) {
   /* GLOBAL NAVIGATION */
 
-  .logo {
+  /* .logo {
     flex-basis: calc(10rem + 2vw);
-  }
+  } */
   .book {
-    flex-basis: calc(10rem - 1vw);
-    margin-left: calc(1.3rem + 1vw);
+    margin-left: calc(1.3em + 1vw);
   }
 }
 @media screen and (min-width: 960px) {
@@ -764,7 +810,7 @@ span {
   }
 
   .single-product-container .single-product-session-description {
-    font-size: 16px;
+    font: 16px "Lato", sans-serif;
     line-height: 1.6rem;
   }
 
@@ -803,14 +849,36 @@ span {
 /* ------------------destop styles ----------------------------------------*/
 @media screen and (min-width: 1024px) {
   /* GLOBAL NAVIGATION */
+
   nav ul a {
     width: auto;
     text-align: center;
     font: bold calc(1rem + 0.2vw) / 2vh var(--body-text);
-    padding: 0.6em 1em;
+    padding: 0.3em 0.5em;
   }
-  .logo {
-    flex-basis: calc(14rem + 2vw);
+
+  h1 {
+    font: bold calc(1.3em + 1vw) / 5vh "Philosopher", sans-serif;
+  }
+  /* home page section 1 style */
+  .sect1 {
+    max-width: calc(90% + 1vw);
+  }
+
+  .sect1 div:first-child {
+    gap: 4vh;
+    justify-content: center;
+  }
+  .bookbutton {
+    padding: 0.1em 0.8em;
+  }
+  .secondImg {
+    width: 18vw;
+    top: 40vh;
+  }
+
+  .testcontainer {
+    gap: 3vw;
   }
 }
 /* destop styles */
