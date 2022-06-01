@@ -68,7 +68,7 @@ body {
 .hamburguer svg {
   width: calc(3rem + 2vw);
   max-height: 8vh;
-  fill: var(--hight-light);
+  fill: var(--high-light);
 }
 nav {
   background: rgba(0, 0, 0, 0.4) url(../images/backgroundNav2.jpg) no-repeat top;
@@ -115,7 +115,7 @@ nav a:active {
   color: var(--active-button);
 }
 nav a:hover {
-  color: var(--hight-light);
+  color: var(--high-light);
 }
 .logoImg {
   width: calc(2rem + 5vw);
@@ -129,7 +129,7 @@ nav a:hover {
 }
 .close {
   padding-left: 0%;
-  color: var(--hight-light);
+  color: var(--high-light);
 }
 .close:hover {
   background-color: transparent;
@@ -179,14 +179,14 @@ nav ul ul li:last-child {
 .sect1 div:first-child {
   display: flex;
   flex-direction: column;
-  gap: 4vw;
+  gap: 7vw;
 }
 h1 {
   color: var(--headings);
 }
 .bookbutton {
   color: var(--bcw);
-  background-color: var(--hight-light);
+  background-color: var(--high-light);
   padding: 0.6rem calc(0.5rem + 1vw);
   border-radius: 10px;
   font: var(--button-text);
@@ -608,7 +608,7 @@ img {
   background-size: 100%;
 }
 span {
-  color: var(--hight-light);
+  color: var(--high-light);
 }
 /* ------------medium tablet styles--------------- */
 
@@ -644,8 +644,8 @@ span {
   }
   nav a:hover {
     background-color: transparent;
-    color: var(--hight-light);
-    border-bottom: solid 2px var(--hight-light);
+    color: var(--high-light);
+    border-bottom: solid 2px var(--high-light);
   }
 
   .logo a:hover {
