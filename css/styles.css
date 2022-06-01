@@ -158,10 +158,13 @@ nav ul ul li:last-child {
 /* HOME MAIN CLASS="mainh*/
 .mainh {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  max-width: calc(280px + 4vw);
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 4rem;
+  max-width: /* calc(280px + 4vw) */100%;
+  margin: 0 auto;
 }
+
+
 h1 {
   color: var(--headings);
 }
@@ -176,6 +179,7 @@ h1 {
   position: relative;
   width: 100%;
   aspect-ratio: 1/1;
+  margin: 0 auto;
   background: radial-gradient(
     50% 50% at 50% 50%,
     #e89923 0%,
@@ -183,7 +187,7 @@ h1 {
   );
 }
 .firstImg {
-  position: absolute;
+  position: relative;
   width: 50vw;
   margin: 0 auto;
   aspect-ratio: 1/1;
@@ -203,6 +207,29 @@ h1 {
   background: url(../images/secondImg.jpg) no-repeat center;
   background-size: 100%;
   border-radius: 250px 250px 0px 0px;
+}
+.testim1 {
+  width: 132px;
+  height: 142px;
+  left: 124px;
+  top: 959px;
+}
+.sect2 {
+  margin: 0%;
+  background-color: var(--light-background);
+}
+img {
+  width: 30vw;
+}
+.thirdImg {
+  width: 50vw;
+  margin: 0 auto;
+  aspect-ratio: 1/1;
+  background: url(../images/thirdImg.jpg) no-repeat center;
+  background-size: 100%;
+}
+span {
+  color: var(--hight-light);
 }
 /* ------------medium tablet styles--------------- */
 
