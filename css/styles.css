@@ -12,6 +12,7 @@
   --active-button: #ffd552;
   /* fonts */
   --button-text: bold 0.8rem / 3vw "Lato", sans-serif;
+  --captions: 0.8rem/3vw "Lato", sans-serif;
 }
 
 /* reset */
@@ -50,7 +51,7 @@ h3 {
     sans-serif;
 }
 p {
-  font: /* 1rem destop size */ 1rem / 5vw "Lato", sans-serif;
+  font: /* 1rem destop size */ 1rem / 3vw "Lato", sans-serif;
 }
 
 body {
@@ -106,7 +107,7 @@ nav ul li {
 nav ul a {
   width: 80vw;
   font: bold calc(1rem + 0.8vw) / 5vw var(--body-text);
-  padding: 0.5rem 0 0.5rem 2rem;
+  padding: 0.5em 0 0.5em 2em;
   display: block;
   color: var(--bc);
   transition: color 0.22s ease-in-out;
@@ -167,9 +168,6 @@ nav ul ul li:last-child {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
-  /*  display: flex;
-  flex-direction: column;
-  gap: 4vw; */
 }
 
 .sect1 div:first-child {
@@ -182,8 +180,9 @@ h1 {
 }
 .bookbutton {
   color: var(--bcw);
+  max-width: 126px;
   background-color: var(--high-light);
-  padding: 0.6rem calc(0.5rem + 1vw);
+  padding: 0.6em 1em;
   border-radius: 10px;
   font: var(--button-text);
 }
@@ -219,21 +218,37 @@ h1 {
   background-size: 100%;
   border-radius: 250px 250px 0px 0px;
 }
-.testim1 {
-  width: 132px;
-  height: 142px;
-  left: 124px;
-  top: 959px;
-}
 /* home main second section */
 .sect2 {
-  margin: 0%;
   background-color: var(--light-background);
 }
-img {
-  width: 30vw;
+.sect2 h2 {
+  padding: 1em 0;
+  text-align: center;
 }
-.thirdImg {
+.testcontainer {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
+  gap: 6vw;
+}
+.testcontainer div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.testim1 {
+  max-width: calc(8em + 1vw);
+  border-radius: 50%;
+}
+.caption {
+  font: var(--captions);
+}
+
+/* .thirdImg {
   width: 50vw;
   margin: 0 auto;
   aspect-ratio: 1/1;
@@ -242,7 +257,7 @@ img {
 }
 span {
   color: var(--high-light);
-}
+} */
 /* home main third section */
 .sect3 ul {
   width: 80%;
@@ -621,6 +636,7 @@ span {
   /* section 1 style */
   .sect1 {
     max-width: calc(90% + 1vw);
+    margin-bottom: 3em;
   }
 
   .sect1 div:first-child {
@@ -631,18 +647,18 @@ span {
     font: /* 4.375rem destop size */ bold calc(1.3rem + 1vw) / 5vw "Philosopher",
       sans-serif;
   }
-  p {
+  .sect1 p {
     font: /* 1rem destop size */ 1rem / 3vw "Lato", sans-serif;
   }
   .bookbutton {
-    padding: 0.6rem 0.7rem;
+    padding: 0.6em 0.7em;
     border-radius: 10px;
     font: var(--button-text);
   }
-  
-.container{
-  aspect-ratio: 1/1.1;
-}
+
+  .container {
+    aspect-ratio: 1/1.3;
+  }
   .firstImg {
     width: 35vw;
     aspect-ratio: 1/1;
@@ -680,12 +696,12 @@ span {
   }
   nav ul li {
     border-bottom: none;
-    gap: calc(20vw + 1vw);
+    gap: calc(16em + 1vw);
   }
   nav ul a {
     width: auto;
-    font: bold calc(6px + 1vw) / 1vh var(--body-text);
-    padding: 0.6rem calc(0.5rem + 1vw);
+    font: bold 0.8em "Lato", sans-serif;
+    padding: 0.6em;
     border-radius: 10px;
   }
   nav a:hover {
@@ -791,7 +807,7 @@ span {
     width: auto;
     text-align: center;
     font: bold calc(1rem + 0.2vw) / 2vh var(--body-text);
-    padding: 0.6rem 1rem;
+    padding: 0.6em 1em;
   }
   .logo {
     flex-basis: calc(14rem + 2vw);
