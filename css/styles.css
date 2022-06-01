@@ -11,7 +11,7 @@
   --hight-light: #e89923;
   --active-button: #ffd552;
   /* fonts */
-  --body-text: "Lato", sans-serif;
+  --button-text: bold calc(0.8rem + 0.5vw) / 3vw "Lato", sans-serif;
 }
 
 /* reset */
@@ -160,19 +160,31 @@ nav ul ul li:last-child {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 4rem;
-  max-width: /* calc(280px + 4vw) */100%;
+  max-width: /* calc(280px + 4vw) */ 100%;
   margin: 0 auto;
 }
+/* home main first section */
+.sect1 {
+  max-width: calc(80% + 2vw);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
 
-
+.sect1 div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
 h1 {
   color: var(--headings);
 }
 .bookbutton {
   color: var(--bcw);
-  background-color: #e89923;
+  background-color: var(--hight-light);
   padding: 0.6rem calc(0.5rem + 1vw);
   border-radius: 10px;
+  font: var(--button-text);
 }
 
 .container {
