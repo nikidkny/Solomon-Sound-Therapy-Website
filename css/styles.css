@@ -745,7 +745,7 @@ h1 {
 }
 #benefits {
   background-color: var(--light-background);
-  padding: 10%;
+  padding: 5% 10% 5% 10%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -1237,7 +1237,8 @@ h2 {
   #benefits {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    row-gap: 20%;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 0%;
   }
   #benefits h2 {
     grid-column: span 6;
