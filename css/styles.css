@@ -789,6 +789,25 @@ blockquote {
     max-width: 90%;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   }
+  #aboutTherapyMain {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #aboutTherapyMain .tablet {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+  }
+  #aboutTherapyMain .tablet h1 {
+    align-self: center;
+    padding-bottom: 10%;
+  }
+  #aboutTherapyMain .tablet .gradientBackground {
+    grid-column: 2/2;
+    grid-row: 1 / span 2;
+  }
+  #aboutTherapyMain .tablet blockquote {
+    grid-column: span 2;
+  }
 }
 /* ------------medium tablet styles--------------- */
 
@@ -930,6 +949,18 @@ blockquote {
   .book-date-time-container > p {
     flex-direction: row;
     align-items: center;
+  }
+  .laptopSize {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    align-items: center;
+    column-gap: 10%;
+  }
+  .laptopSize img {
+    width: 70%;
+  }
+  #benefits .benefitIcon {
+    width: 10%;
   }
 }
 /* ------------------destop styles ----------------------------------------*/
