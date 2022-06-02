@@ -134,13 +134,38 @@ nav .book-now-button-small {
   font: 12px "Lato", sans-serif;
 }
 
+nav .fa-chevron-up {
+  display: none;
+}
+
+.services-nav-dropdown {
+  display: none;
+}
+
+.show-dropdown {
+  display: block;
+  padding: 20px 20px;
+}
+
 .services-nav-dropdown ul {
   margin-bottom: 0px;
 }
 
 .services-nav-dropdown ul li {
-  margin-bottom: 0px;
+  margin-bottom: 4px;
   border: none;
+}
+
+.services-nav-dropdown ul li a {
+  font: 12px "Lato", sans-serif;
+}
+
+.hide-chevron {
+  display: none !important;
+}
+
+.show-chevron {
+  display: inline-block !important;
 }
 
 /*---------  PRODUCT LIST STYLES ---------*/
@@ -243,8 +268,8 @@ nav .book-now-button-small {
   color: white;
   width: 160px;
   height: 50px;
-  font-size: 12px;
-  font-weight: 700;
+  font: 12px "Lato", sans-serif;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -702,8 +727,71 @@ span {
 }
 /* ------------medium tablet styles--------------- */
 
-@media screen and (min-width: 685px) {
+@media screen and (min-width: 900px) {
   /* GLOBAL NAVIGATION */
+
+  .mobile-nav {
+    display: flex;
+  }
+  .show-nav {
+    display: flex;
+    position: static;
+    background-color: white;
+    height: 0;
+    width: 0;
+  }
+
+  nav .icon {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    margin-bottom: 0;
+    margin-right: 30px;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  nav ul li {
+    margin-bottom: 0;
+    border-bottom: none;
+    margin-right: 40px;
+  }
+
+  nav ul li a {
+    color: black;
+  }
+
+  nav ul li a:hover {
+    color: #e89923;
+  }
+
+  nav .close-nav {
+    display: none;
+  }
+
+  .show-dropdown {
+    padding: 0;
+  }
+
+  .services-nav-dropdown ul {
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    background-color: rgb(250, 235, 219);
+    padding: 30px 30px;
+    margin-top: 5px;
+    border-radius: 15px;
+  }
+
+  .services-nav-dropdown ul li {
+    margin-bottom: 10px;
+  }
+
+  .services-nav-dropdown ul li a {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 818px) {

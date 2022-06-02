@@ -25,7 +25,6 @@ fetch(url, options)
   });
 
 function handleData(sessions) {
-  handleNavData(sessions);
   sessions.forEach((session) => {
     // 1. Grap the template
     const template = document.querySelector("#product-list-template").content;
