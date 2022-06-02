@@ -732,6 +732,10 @@ h1 {
 #aboutTContent2 {
   margin: 5% 10% 0 10%;
 }
+#aboutTContent2 p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 .imgSize img {
   width: 40%;
   margin: 5% 0 5% 0;
@@ -788,6 +792,10 @@ blockquote {
   display: none;
 }
 .gridSmallSize {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.gridLayoutLaptopHeal {
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -955,7 +963,92 @@ h2 {
   .dropDown:hover > .submenu {
     display: block;
   } */
-
+  /* ------------about therapy page styles--------------- */
+  #aboutTContent2 p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .gridLaptopSize {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.1fr 1fr;
+    margin: 10% 0 10% 0;
+    align-items: center;
+  }
+  .gridLaptopSize .LaptopSizeImg {
+    grid-row: span 2;
+  }
+  .laptopSize img {
+    width: 85%;
+  }
+  .imgSize img {
+    width: 50%;
+    margin-bottom: 10%;
+  }
+  .h2LaptopSizeGrid {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .laptopSizeGridColumn {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .laptopSizeGridColumn p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .gridLayoutLaptopHeal {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .gridLayoutLaptopHeal p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .middle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .gridLayoutLaptopHeal .gridPharagraph {
+    grid-column: 1;
+    margin: 10% 0 0 10%;
+  }
+  .gridLayoutLaptopHeal .gradientBackground {
+    grid-column: 2;
+  }
+  .gridLayoutLaptopHeal h2 {
+    grid-column: 1;
+  }
+  .hiddenH2Small {
+    display: contents;
+  }
+  .grid {
+    display: contents;
+  }
+  .hiddenH2Laptop {
+    display: none;
+  }
+  .gridLayoutBenefitLaptop {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  .gridLayoutBenefitLaptop img {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  #aboutTContent2 {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  .SmallerImg img {
+    width: 90%;
+  }
   /* home page section 2 style */
   .testcontainer {
     max-width: 90%;
@@ -990,6 +1083,61 @@ h2 {
   /* home page style sect 4 */
   .sect4 ul {
     margin: calc(6em + 1vw);
+  }
+  /* ------------about therapy page styles--------------- */
+  #aboutTContent2 p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .gridLaptopSize {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.1fr 1fr;
+    margin: 10% 0 0 0;
+    align-items: center;
+  }
+  .gridLaptopSize .LaptopSizeImg {
+    grid-row: span 2;
+  }
+  .laptopSize img {
+    width: 85%;
+  }
+  .imgSize img {
+    width: 70%;
+    margin-bottom: 10%;
+  }
+  .h2LaptopSizeGrid {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .laptopSizeGridColumn {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .gridLayoutLaptopHeal {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin: 0;
+    padding: 0;
+  }
+  .gridLayoutLaptopHeal .gridPharagraph {
+    grid-column: 1;
+    margin: 10% 0 0 10%;
+  }
+  .gridLayoutLaptopHeal .gradientBackground {
+    grid-column: 2;
+  }
+  .gridLayoutLaptopHeal h2 {
+    grid-column: 1;
+  }
+  .hiddenH2Small {
+    display: contents;
+  }
+  .grid {
+    display: contents;
+  }
+  .hiddenH2Laptop {
+    display: none;
   }
 }
 @media screen and (min-width: 960px) {
@@ -1119,40 +1267,7 @@ h2 {
   #benefits .alone {
     width: 20%;
   }
-  .hiddenH2Laptop {
-    display: none;
-  }
-  .hiddenH2Small {
-    display: contents;
-  }
-  .grid {
-    display: contents;
-  }
-  .gridLaptopSize {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.1fr 1fr;
-    margin: 10% 0 0 0;
-    align-items: center;
-  }
-  .gridLaptopSize .LaptopSizeImg {
-    grid-row: span 2;
-  }
-  .laptopSize img {
-    width: 85%;
-  }
-  .imgSize img {
-    width: 30%;
-    margin-bottom: 10%;
-  }
-  .h2LaptopSizeGrid {
-    grid-row: 1;
-    grid-column: 2;
-  }
-  .laptopSizeGridColumn {
-    grid-row: 2;
-    grid-column: 2;
-  }
+
   /* -----------------about Her page stlyes ----------------- */
   #aboutMeMain {
     display: grid;
@@ -1178,6 +1293,8 @@ h2 {
   .aboutJudyVideo {
     width: 80%;
   }
+
+  /* ----------------- page stlyes ----------------- */
   .testcontainer {
     gap: 3vw;
   }
