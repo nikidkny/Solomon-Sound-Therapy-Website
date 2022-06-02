@@ -664,12 +664,15 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(323.5px, 1fr));
 }
-.aboutTContent {
-  margin: 10%;
+#aboutTContent1 {
+  margin: 10% 10% 1% 10%;
+}
+#aboutTContent2 {
+  margin: 5% 10% 0 10%;
 }
 .imgSize img {
   width: 40%;
-  margin: 10% 0 10% 0;
+  margin: 5% 0 5% 0;
 }
 .higlightSpan {
   color: var(--high-light);
@@ -701,8 +704,9 @@ h1 {
   width: 15%;
 }
 blockquote {
-  margin: 10% 0 10% 0;
-  font-size: small;
+  margin: 5% 0 5% 0;
+  font-size: 0.85em;
+  font-style: italic;
 }
 .grid {
   display: grid;
@@ -717,6 +721,9 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.hiddenH2Small {
+  display: none;
 }
 /* ------------about me page styles--------------- */
 #aboutMeMain {
@@ -744,6 +751,9 @@ blockquote {
 }
 #aboutMeMain .imageSizeBigger {
   width: 70%;
+}
+.aboutJudyVideo {
+  width: 100%;
 }
 /* ------------small tablet styles--------------- */
 @media screen and (min-width: 647px) {
@@ -896,6 +906,20 @@ blockquote {
   .book {
     margin-left: calc(1.3em + 1vw);
   }
+  .laptopSize {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+  }
+  .laptopSize img {
+    width: 70%;
+  }
+  #benefits .iconLaptopSize {
+    width: 10%;
+  }
+  #benefits .alone {
+    width: 5%;
+  }
 }
 @media screen and (min-width: 960px) {
   #product-list-container {
@@ -950,18 +974,6 @@ blockquote {
     flex-direction: row;
     align-items: center;
   }
-  .laptopSize {
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
-    align-items: center;
-    column-gap: 10%;
-  }
-  .laptopSize img {
-    width: 70%;
-  }
-  #benefits .benefitIcon {
-    width: 10%;
-  }
 }
 /* ------------------destop styles ----------------------------------------*/
 @media screen and (min-width: 1024px) {
@@ -996,6 +1008,66 @@ blockquote {
 
   .testcontainer {
     gap: 3vw;
+  }
+  #benefits {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 20%;
+  }
+  #benefits h2 {
+    grid-column: span 6;
+  }
+  #benefits :nth-child(2) {
+    grid-column: span 2;
+  }
+  #benefits :nth-child(3) {
+    grid-column: span 2;
+  }
+  #benefits :nth-child(4) {
+    grid-column: span 2;
+  }
+  #benefits :nth-child(5) {
+    grid-column: 2 / span 2;
+  }
+  #benefits :nth-child(6) {
+    grid-column: 4 / span 2;
+  }
+  #benefits :nth-child(5),
+  #benefits :nth-child(6) {
+    display: flex;
+  }
+  #benefits .iconLaptopSize {
+    width: 20%;
+  }
+  #benefits .alone {
+    width: 20%;
+  }
+  .hiddenH2Laptop {
+    display: none;
+  }
+  .hiddenH2Small {
+    display: contents;
+  }
+  .grid {
+    display: contents;
+  }
+  .gridLaptopSize {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    margin-right: 10%;
+    align-items: center;
+  }
+  .gridLaptopSize .LaptopSizeImg {
+    grid-row: span 2;
+  }
+  .h2LaptopSizeGrid {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .laptopSizeGridColumn {
+    grid-row: 2;
+    grid-column: 2;
   }
 }
 /* destop styles */
