@@ -11,8 +11,8 @@
   --high-light: #e89923;
   --active-button: #ffd552;
   /* fonts */
-  --title: "Philosopher", sans-serif;
-  --body-text: "Lato", sans-serif;
+  --button-text: bolder 0.8rem / 3vw "Lato", sans-serif;
+  --captions: small-caps calc(0.5em + 0.5vw) / 2vw "Lato", sans-serif;
 }
 
 /* reset */
@@ -31,15 +31,27 @@ li {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   /* outline: 2px dotted red; */
 }
 
 /* fonts */
 
-h1,
-h2,
+h1 {
+  font: /* 4.375rem destop size */ bold calc(1.4em + 1vw) / 7vh "Philosopher",
+    sans-serif;
+}
+h2 {
+  font: /* 3.125rem destop size */ bold calc(1.3em + 1vw) / 6vh "Philosopher",
+    sans-serif;
+}
 h3 {
-  font-family: var(--title);
+  font: /* 2.187rem destop size */ bold calc(0.7em + 1vw) / 3vh "Philosopher",
+    sans-serif;
+}
+p {
+  font: /* 1rem destop size */ calc(0.7em + 0.5vw) / 4vh "Lato", sans-serif;
 }
 
 body {
@@ -47,17 +59,16 @@ body {
 }
 
 /* mobil 320px first styles */
-
 /* GLOBAL NAVIGATION */
 .navMobil {
   display: flex;
-  justify-content: space-between;
   margin: 3vw;
+  justify-content: space-between;
 }
 .hamburguer svg {
-  width: calc(4rem + 4vw);
-  max-height: 10vh;
-  fill: var(--hight-light);
+  width: calc(3rem + 2vw);
+  max-height: 8vh;
+  fill: var(--high-light);
 }
 nav {
   background: rgba(0, 0, 0, 0.4) url(../images/backgroundNav2.jpg) no-repeat top;
@@ -68,11 +79,9 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+
   /* positioning the close button */
   display: flex;
-  /* justify-content: space-around; */
-
   /* animate slide up and down */
   transform: translateY(-100%);
   transition: transform 0.2s ease;
@@ -88,33 +97,33 @@ nav ul {
   max-width: 100%;
 }
 
-nav ul li:nth-child(2) a {
-  color: var(--hight-light);
-}
 nav ul li {
-  border-bottom: solid 3px var(--headings);
+  border-bottom: solid 1.5px var(--headings);
 }
-
-nav a {
+nav ul a {
   width: 80vw;
-  font: bold calc(1rem + 0.8vw) / 7vw var(--body-text);
-  padding: 0.5rem 0 0.5rem 3rem;
+  font: bold calc(1rem + 0.8vw) / 5vw var(--body-text);
+  padding: 0.5em 0 0.5em 2em;
   display: block;
   color: var(--bc);
+  transition: color 0.22s ease-in-out;
+}
+nav a:active {
+  color: var(--active-button);
 }
 nav a:hover {
-  background-color: var(--active-button);
+  color: var(--high-light);
 }
 .logoImg {
   width: calc(2rem + 5vw);
   height: auto;
 }
-.logo a:hover {
+.logo:hover {
   background-color: transparent;
+  border-bottom: none;
 }
-
 .fa-solid {
-  margin-left: 6px;
+  margin-left: calc(0.6px + 1vw);
 }
 
 .close {
@@ -123,6 +132,532 @@ nav a:hover {
 }
 .close:hover {
   background-color: transparent;
+}
+
+/* Second layer of nav style */
+.dropDown {
+  display: block;
+  position: relative;
+}
+
+nav ul ul a {
+  font: calc(1rem + 0.5vw) / 6vw var(--body-text);
+  width: 40vw;
+  margin: 0 auto;
+  display: block;
+}
+nav ul ul li:last-child {
+  border-bottom: none;
+}
+.submenu {
+  position: absolute;
+  background-color: var(--light-background);
+  border-radius: 10px;
+  display: none;
+  z-index: 10;
+}
+.dropDown:hover > .submenu {
+  display: block;
+}
+
+/* home main first section */
+.sect1 {
+  max-width: calc(80% + 2vw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+}
+
+.sect1 div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 7vw;
+}
+h1 {
+  color: var(--headings);
+}
+.bookbutton {
+  color: var(--bcw);
+  width: calc(9em + 2vw);
+  text-align: center;
+  background-color: var(--high-light);
+  padding: 0.6em 0.05em;
+  border-radius: 10px;
+  font: var(--button-text);
+}
+.container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1.1;
+  margin: 0 auto;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #e89923 0%,
+    rgba(232, 153, 35, 0) 100%
+  );
+}
+.firstImg {
+  position: relative;
+  width: 55vw;
+  aspect-ratio: 1/1;
+  left: 16vw;
+  top: 10vh;
+  border-radius: 250px 250px 0px 0px;
+}
+.secondImg {
+  position: absolute;
+  width: 30vw;
+  aspect-ratio: 1/1;
+  left: 10vw;
+  top: calc(7em + 8vh);
+  border-radius: 250px 250px 0px 0px;
+}
+/* home main second section */
+.sect2 {
+  background-color: var(--light-background);
+}
+.sect2 h2 {
+  padding: 1em 0;
+  text-align: center;
+}
+.testcontainer {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
+  gap: 5vw;
+}
+.testcontainer div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.testim1 {
+  max-width: calc(7em + 1vw);
+  border-radius: 50%;
+}
+.caption {
+  font: var(--captions);
+}
+
+/* home main third section */
+.sect3 {
+  max-width: calc(70% + 2vw);
+  margin: 3em auto;
+}
+.sect3 h2 {
+  text-align: center;
+  color: var(--headings);
+}
+.secondarybutton {
+  display: block;
+  width: calc(9em + 2vw);
+  margin: 0 auto;
+  border: solid 2px var(--high-light);
+  color: var(--high-light);
+  border-radius: 10px;
+  padding: 0.6em 0.8em;
+  font: var(--button-text);
+  text-align: center;
+}
+.thirdImg {
+  width: 55vw;
+  margin: 4em auto;
+  aspect-ratio: 1/1;
+  background: url(../images/thirdImg.jpg) no-repeat center;
+  background-size: 100%;
+}
+.sect3 span {
+  color: var(--high-light);
+}
+.sect3 p {
+  margin: 2em auto;
+}
+/* home main fourth section */
+.sect4 ul {
+  width: 80%;
+  margin: 6vw auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.icons {
+  width: 38px;
+  height: 39px;
+}
+/*---------  PRODUCT LIST STYLES ---------*/
+
+.page-headings {
+  font: 35px "Philosopher", sans-serif;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+#product-list-sub-heading {
+  font: 16px "Philosopher", sans-serif;
+  font-weight: 300;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+#product-list-container {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+#product-list-container .product-container {
+  width: 240px;
+  margin-bottom: 60px;
+}
+
+#product-list-container .product-image-container img {
+  width: 240px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#product-list-container .product-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 45%;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#product-list-container .product-price-duration-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px 15px 0px;
+}
+
+#product-list-container .product-price-duration-container p:first-child {
+  font: 16px "Lato", sans-serif;
+  font-weight: 700;
+  color: var(--headings);
+}
+
+#product-list-container .product-price-duration-container p:last-child {
+  font: 16px "Lato", sans-serif;
+  font-weight: 400;
+  color: var(--headings);
+}
+
+#product-list-container .product-description-container {
+  margin: 10px 0px 15px 0px;
+}
+
+#product-list-container .product-description-container p:first-child {
+  font: 18px "Lato", sans-serif;
+  font-weight: 700;
+  white-space: initial;
+  margin-bottom: 5px;
+}
+
+#product-list-container .product-description-container .product-methodology {
+  font: 14px "Lato", sans-serif;
+  font-weight: 400;
+  color: #746e65;
+  margin-top: 10px;
+}
+
+#product-list-container .product-description-container p:last-child {
+  font: 10px "Lato", sans-serif;
+  font-weight: 400;
+  color: #746e65;
+  margin-top: 10px;
+}
+
+#product-list-container .book-now-button-small {
+  padding: 16px 30px;
+  background: linear-gradient(180deg, #e89a26 0%, #ebaf55 100%);
+  border-radius: 15px;
+  color: white;
+  width: 160px;
+  height: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 60px;
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid var(--high-light);
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+/*---------  SINGLE PRODUCT STYLES ---------*/
+
+.single-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.single-product-container img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: -20px -20px #f7d5a2;
+}
+
+.single-product-container .single-product-session-description {
+  font: 12px "Lato", sans-serif;
+  line-height: 1.4rem;
+}
+
+.single-product-container .single-product-title {
+  margin: 20px 0px 20px 0px;
+}
+
+.single-product-container > div:last-child {
+  padding: 30px 10vw 30px 10vw;
+}
+
+.single-product-container > div > div {
+  margin-top: 20px;
+}
+
+.single-product-container > div > div p:first-child {
+  font: 16px "Lato", sans-serif;
+  font-weight: 700;
+  color: var(--headings);
+  margin-bottom: 6px;
+}
+
+.single-product-container > div > div p:last-child {
+  font: 16px "Lato", sans-serif;
+  font-weight: 400;
+  color: var(--headings);
+}
+
+.book-session-container {
+  padding: 50px 10vw 30px 10vw;
+  font-family: "Lato", sans-serif;
+}
+
+.book-session-container > p {
+  font: 12px "Lato", sans-serif;
+}
+
+.book-session-container > p:first-child {
+  border-bottom: 1px solid black;
+  padding-bottom: 13px;
+}
+
+.book-date-time-container p {
+  font: 18px "Lato", sans-serif;
+}
+
+.book-date-time-container > p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 13px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.book-date-time-container > p span {
+  font-size: 10px;
+  color: #7c7c7c;
+}
+
+.booking-process-container {
+  margin-top: 40px;
+}
+
+.calendar-timeslots-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-month {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 13px;
+  font-size: 12px;
+}
+
+.calendar-weekdays {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 10px;
+  color: #7c7c7c;
+}
+
+.calendar-weekdays span {
+  color: black;
+}
+
+.calendar-days-container {
+  margin-top: 13px;
+}
+.calendar-days-container > div {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 12px;
+}
+
+.calendar-days-container span {
+  color: black;
+  padding: 5px 8px 5px 8px;
+}
+
+.calendar-days-container span:hover {
+  background-color: var(--high-light);
+  cursor: pointer;
+  color: white;
+}
+
+.timeslots-container {
+  margin-top: 30px;
+}
+
+.timeslots-title {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.timeslots-container > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(1fr, 7);
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-top: 13px;
+}
+
+.timeslots-container div:nth-child(2) div {
+  border: 1px solid black;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.timeslots-container div:nth-child(2) div:hover {
+  background-color: var(--high-light);
+  cursor: pointer;
+  color: white;
+}
+
+.booking-summary-container {
+  margin-top: 40px;
+}
+
+.booking-summary-container p:first-child {
+  font: 20px "Lato", sans-serif;
+  border-bottom: 1px solid black;
+  padding-bottom: 13px;
+  font-weight: 700;
+}
+
+.booking-summary-container p:nth-child(2) {
+  font: 12px "Lato", sans-serif;
+  margin-top: 20px;
+  border: 1px solid var(--high-light);
+  border-radius: 15px;
+  color: #e89923;
+  padding: 4px 10px;
+  width: 70%;
+}
+
+.booking-summary-container p:nth-child(2) > i {
+  margin-right: 8px;
+}
+
+.booking-summary-container .book-now-button-small {
+  font: 12px "Lato", sans-serif;
+  padding: 16px 100px;
+  background: linear-gradient(180deg, #e89a26 0%, #ebaf55 100%);
+  border-radius: 15px;
+  color: white;
+  width: 160px;
+  height: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.booking-summary-container p:nth-child(3) {
+  font: 18px "Lato", sans-serif;
+  margin-top: 25px;
+}
+
+.booking-summary-container p:nth-child(4) {
+  font: 12px "Lato", sans-serif;
+  margin-top: 8px;
+  margin-bottom: 30px;
 }
 /* ------------about therapy page styles--------------- */
 .aboutTContent {
@@ -194,7 +729,51 @@ blockquote {
 /* .gradientBackground {
   background: radial-gradient(circle at center, #e8992394 0%, transparent 60%);
 } */
+/* ------------small tablet styles--------------- */
+@media screen and (min-width: 647px) {
+  /* home page section 1 style */
+  .sect1 {
+    max-width: calc(90% + 1vw);
+    margin-bottom: 5em;
+  }
 
+  .sect1 div:first-child {
+    gap: 4vh;
+    justify-content: center;
+  }
+  h1 {
+    font: bold calc(1.3em + 1vw) / 5vh "Philosopher", sans-serif;
+  }
+  .sect1 p {
+    font: /* 1rem destop size */ 1rem / 3vw "Lato", sans-serif;
+  }
+  .bookbutton {
+    padding: 0.4em 0.5em;
+    border-radius: 10px;
+    font: var(--button-text);
+  }
+
+  .container {
+    aspect-ratio: 1/1.2;
+  }
+  .firstImg {
+    width: 35vw;
+    aspect-ratio: 1/1;
+    left: 8vw;
+    top: 5vh;
+  }
+  .secondImg {
+    width: 25vw;
+    aspect-ratio: 1/1;
+    left: 5vw;
+    top: 25vh;
+  }
+  /* home page section 2 style */
+  .testcontainer {
+    max-width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }
+}
 /* ------------medium tablet styles--------------- */
 
 @media screen and (min-width: 685px) {
@@ -213,49 +792,168 @@ blockquote {
   }
   nav ul {
     flex-flow: row wrap;
-    justify-content: space-around;
+    gap: 0.9em;
     align-items: center;
+    justify-content: flex-end;
     width: 100%;
   }
   nav ul li {
     border-bottom: none;
+    gap: calc(16em + 1vw);
   }
   nav ul a {
     width: auto;
-    text-align: center;
-    font: bold calc(1rem + 0.2vw) / 1vh var(--body-text);
-    padding: 0.6rem 1rem;
+    font: bold 0.8em "Lato", sans-serif;
+    padding: 0.6em;
+    border-radius: 10px;
   }
   nav a:hover {
     background-color: transparent;
-    color: var(--active-button);
+    color: var(--high-light);
+    border-bottom: solid 2px var(--high-light);
+  }
+  .logo {
+    margin: auto 5vw 0 3vw;
   }
 
-  .logo {
-    flex-basis: calc(8rem + 2vw);
-  }
-  .book {
-    flex-basis: calc(9.5rem - 1vw);
-    padding: 0%;
+  .logo a:hover {
+    border-bottom: none;
   }
   .book a {
     color: var(--bcw);
     background-color: #e89923;
-    border-radius: 10px;
+    /* padding: 0.4rem 0.2rem; */
+  }
+  /* Second layer of nav style*/
+  nav ul ul a {
+    width: auto;
+    font: calc(1rem + 0.2vw) / 1vh var(--body-text);
+  }
+  /* .submenu {
+    position: absolute;
+    background-color: var(--light-background); 
+    border-radius: 10px;      
+    display: none;
+    z-index: 10;
+  }
+  .dropDown:hover > .submenu {
+    display: block;
+  } */
+
+  /* home page section 1 style */
+  .container {
+    aspect-ratio: 1/1;
+  }
+  /* home page section 2 style */
+  .testcontainer {
+    max-width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   }
 }
 
 /* ------------------large tablets and laptop styles --------------------*/
-@media screen and (min-width: 960px) {
-}
+@media screen and (min-width: 942px) {
+  /* GLOBAL NAVIGATION */
 
+  /* .logo {
+    flex-basis: calc(10rem + 2vw);
+  } */
+  .book {
+    margin-left: calc(1.3em + 1vw);
+  }
+}
+@media screen and (min-width: 960px) {
+  #product-list-container {
+    justify-content: flex-start;
+  }
+
+  .single-product-container {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .single-product-container > div:last-child {
+    padding: 40px 60px 0px 60px;
+    align-self: flex-start;
+  }
+
+  .single-product-container .single-product-session-description {
+    font: 16px "Lato", sans-serif;
+    line-height: 1.6rem;
+  }
+
+  .booking-process-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .calendar-timeslots-container {
+    flex-direction: row;
+    column-gap: 60px;
+    align-items: flex-start;
+  }
+
+  .timeslots-container {
+    margin-top: 0px;
+  }
+
+  .book-date-time-container > p {
+    align-items: flex-start;
+  }
+
+  .booking-summary-container {
+    margin-top: 0px;
+  }
+
+  .booking-summary-container p:nth-child(2) {
+    width: 100%;
+  }
+
+  .book-date-time-container > p {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 /* ------------------destop styles ----------------------------------------*/
 @media screen and (min-width: 1024px) {
   /* GLOBAL NAVIGATION */
+
   nav ul a {
     width: auto;
     text-align: center;
     font: bold calc(1rem + 0.2vw) / 2vh var(--body-text);
-    padding: 0.6rem 1rem;
+    padding: 0.3em 0.5em;
+  }
+
+  h1 {
+    font: bold calc(1.3em + 1vw) / 5vh "Philosopher", sans-serif;
+  }
+  /* home page section 1 style */
+  .sect1 {
+    max-width: calc(90% + 1vw);
+  }
+
+  .sect1 div:first-child {
+    gap: 4vh;
+    justify-content: center;
+  }
+  .bookbutton {
+    padding: 0.1em 0.8em;
+  }
+  .secondImg {
+    width: 18vw;
+    top: 40vh;
+  }
+
+  .testcontainer {
+    gap: 3vw;
+  }
+}
+/* destop styles */
+@media screen and (min-width: 1200px) {
+  .page-headings {
+    font-size: 50px;
   }
 }
