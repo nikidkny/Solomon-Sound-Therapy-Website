@@ -960,12 +960,6 @@ h1 {
     border-left: solid 1px var(--headings);
     padding-left: 2em;
   }
-
-  /* home page style fifth section */
-  .testcontainer.services {
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 5vw;
-  }
 }
 /* destop styles */
 @media screen and (min-width: 1200px) {
