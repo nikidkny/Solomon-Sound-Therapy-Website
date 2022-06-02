@@ -134,7 +134,6 @@ nav a:hover {
 .close:hover {
   background-color: transparent;
 }
-
 /* Second layer of nav style */
 .dropDown {
   display: block;
@@ -716,138 +715,7 @@ h1 {
   margin-top: 8px;
   margin-bottom: 30px;
 }
-/* ------------about therapy page styles--------------- */
-#aboutTherapyMain {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(323.5px, 1fr));
-}
-#aboutTContent1 {
-  margin: 10% 10% 1% 10%;
-}
 
-#aboutTContent1 p {
-  margin-top: 1%;
-  margin-bottom: 3%;
-}
-#aboutTContent2 {
-  margin: 5% 10% 0 10%;
-}
-#aboutTContent2 p {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-.imgSize img {
-  width: 40%;
-  margin: 5% 0 5% 0;
-}
-.higlightSpan {
-  color: var(--high-light);
-}
-#benefits {
-  background-color: var(--light-background);
-  padding: 5% 10% 5% 10%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  column-gap: 2%;
-}
-#benefits h2 {
-  grid-column: span 2;
-}
-#benefits :nth-child(6) {
-  grid-column: span 2;
-}
-#benefits > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 10%;
-}
-#benefits .benefitIcon {
-  width: 25%;
-}
-#benefits .alone {
-  width: 15%;
-}
-blockquote {
-  margin: 5% 0 5% 0;
-  font-size: 0.85em;
-  font-style: italic;
-}
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  align-items: center;
-  column-gap: 10%;
-}
-.grid img {
-  width: 90%;
-}
-.middle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hiddenH2Small {
-  display: none;
-}
-.gridSmallSize {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-.gridLayoutLaptopHeal {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-/* ------------about me page styles--------------- */
-#aboutMeMain {
-  display: grid;
-}
-.aboutContent1 {
-  padding: 10% 10% 5% 10%;
-}
-.aboutContent2 {
-  padding: 10%;
-}
-.aboutContent1 h1,
-h2 {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-.aboutContent2 p {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-#aboutMeMain img {
-  width: 50%;
-}
-#qualifications {
-  background-color: var(--light-background);
-  padding: 10%;
-}
-#qualifications ul {
-  margin-top: 3%;
-  margin-bottom: 3%;
-}
-.gradientBackground {
-  background: radial-gradient(circle at center, #e8992394 0%, transparent 60%);
-}
-#gradientBackgroundright {
-  background: radial-gradient(circle at center, #e8992394 0%, transparent 60%);
-  display: grid;
-  justify-items: end;
-  align-items: center;
-  margin-top: 0;
-}
-#aboutMeMain .imageSizeBigger {
-  width: 70%;
-}
-.aboutJudyVideo {
-  width: 100%;
-}
-.aboutMeImgHidden {
-  display: none;
-}
 /* ------------small tablet styles--------------- */
 @media screen and (min-width: 647px) {
   /* home page section 1 style */
@@ -877,25 +745,6 @@ h2 {
   .testcontainer {
     max-width: 90%;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  }
-  #aboutTherapyMain {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  #aboutTherapyMain .tablet {
-    display: grid;
-    grid-template-columns: 1fr 0.2fr;
-  }
-  #aboutTherapyMain .tablet h1 {
-    align-self: center;
-    padding-bottom: 5%;
-  }
-  #aboutTherapyMain .tablet .gradientBackground {
-    grid-column: 2/2;
-    grid-row: 1 / span 2;
-  }
-  #aboutTherapyMain .tablet blockquote {
-    grid-column: span 2;
   }
 }
 /* ------------medium tablet styles--------------- */
@@ -963,92 +812,7 @@ h2 {
   .dropDown:hover > .submenu {
     display: block;
   } */
-  /* ------------about therapy page styles--------------- */
-  #aboutTContent2 p {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  .gridLaptopSize {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.1fr 1fr;
-    margin: 10% 0 10% 0;
-    align-items: center;
-  }
-  .gridLaptopSize .LaptopSizeImg {
-    grid-row: span 2;
-  }
-  .laptopSize img {
-    width: 85%;
-  }
-  .imgSize img {
-    width: 50%;
-    margin-bottom: 10%;
-  }
-  .h2LaptopSizeGrid {
-    grid-row: 1;
-    grid-column: 2;
-  }
-  .laptopSizeGridColumn {
-    grid-row: 2;
-    grid-column: 2;
-  }
-  .laptopSizeGridColumn p {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  .gridLayoutLaptopHeal {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-  }
-  .gridLayoutLaptopHeal p {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  .middle {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .gridLayoutLaptopHeal .gridPharagraph {
-    grid-column: 1;
-    margin: 10% 0 0 10%;
-  }
-  .gridLayoutLaptopHeal .gradientBackground {
-    grid-column: 2;
-  }
-  .gridLayoutLaptopHeal h2 {
-    grid-column: 1;
-  }
-  .hiddenH2Small {
-    display: contents;
-  }
-  .grid {
-    display: contents;
-  }
-  .hiddenH2Laptop {
-    display: none;
-  }
-  .gridLayoutBenefitLaptop {
-    display: grid;
-    grid-template-rows: 1fr;
-    align-items: center;
-    margin-bottom: 5%;
-  }
-  .gridLayoutBenefitLaptop img {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-  }
-  #aboutTContent2 {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-  }
-  .SmallerImg img {
-    width: 90%;
-  }
+
   /* home page section 2 style */
   .testcontainer {
     max-width: 90%;
@@ -1066,77 +830,9 @@ h2 {
   .book {
     margin-left: calc(1.3em + 1vw);
   }
-  .laptopSize {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    align-items: center;
-  }
-  .laptopSize img {
-    width: 70%;
-  }
-  #benefits .iconLaptopSize {
-    width: 10%;
-  }
-  #benefits .alone {
-    width: 5%;
-  }
   /* home page style sect 4 */
   .sect4 ul {
     margin: calc(6em + 1vw);
-  }
-  /* ------------about therapy page styles--------------- */
-  #aboutTContent2 p {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-  .gridLaptopSize {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.1fr 1fr;
-    margin: 10% 0 0 0;
-    align-items: center;
-  }
-  .gridLaptopSize .LaptopSizeImg {
-    grid-row: span 2;
-  }
-  .laptopSize img {
-    width: 85%;
-  }
-  .imgSize img {
-    margin-bottom: 10%;
-  }
-  .h2LaptopSizeGrid {
-    grid-row: 1;
-    grid-column: 2;
-  }
-  .laptopSizeGridColumn {
-    grid-row: 2;
-    grid-column: 2;
-  }
-  .gridLayoutLaptopHeal {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    margin: 0;
-    padding: 0;
-  }
-  .gridLayoutLaptopHeal .gridPharagraph {
-    grid-column: 1;
-    margin: 10% 0 0 10%;
-  }
-  .gridLayoutLaptopHeal .gradientBackground {
-    grid-column: 2;
-  }
-  .gridLayoutLaptopHeal h2 {
-    grid-column: 1;
-  }
-  .hiddenH2Small {
-    display: contents;
-  }
-  .grid {
-    display: contents;
-  }
-  .hiddenH2Laptop {
-    display: none;
   }
 }
 @media screen and (min-width: 960px) {
@@ -1225,76 +921,7 @@ h2 {
   .bookbutton {
     padding: 0.1em 0.8em;
   }
-  .secondImg {
-    width: 18vw;
-    top: 40vh;
-  }
-  .testcontainer {
-    gap: 3vw;
-  }
-  /* -----------------about Therapy page stlyes ----------------- */
-  #benefits {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 0%;
-  }
-  #benefits h2 {
-    grid-column: span 6;
-  }
-  #benefits :nth-child(2) {
-    grid-column: span 2;
-  }
-  #benefits :nth-child(3) {
-    grid-column: span 2;
-  }
-  #benefits :nth-child(4) {
-    grid-column: span 2;
-  }
-  #benefits :nth-child(5) {
-    grid-column: 2 / span 2;
-  }
-  #benefits :nth-child(6) {
-    grid-column: 4 / span 2;
-  }
-  #benefits :nth-child(5),
-  #benefits :nth-child(6) {
-    display: flex;
-  }
-  #benefits .iconLaptopSize {
-    width: 20%;
-  }
-  #benefits .alone {
-    width: 20%;
-  }
 
-  /* -----------------about Her page stlyes ----------------- */
-  #aboutMeMain {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .aboutMeImgHidden {
-    display: block;
-  }
-  .aboutContent2 {
-    grid-column: span 2;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 5% 0 5% 5%;
-    align-items: center;
-    justify-items: end;
-  }
-  .gridLayoutLaptop {
-    grid-column: 1;
-  }
-  .aboutContent2 video {
-    grid-column: 2;
-  }
-  .aboutJudyVideo {
-    width: 80%;
-  }
-
-  /* ----------------- page stlyes ----------------- */
   .testcontainer {
     gap: 3vw;
   }
@@ -1308,7 +935,7 @@ h2 {
     gap: 5vw;
   }
 }
-/* -----------------destop styles -----------------*/
+/* destop styles */
 @media screen and (min-width: 1200px) {
   .page-headings {
     font-size: 50px;
