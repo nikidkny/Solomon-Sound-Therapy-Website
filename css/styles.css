@@ -130,8 +130,9 @@ nav a:hover {
   /* display: grid;
   grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); */
 }
-#aboutTherapyMain img {
+.imgSize img {
   width: 40%;
+  margin: 10% 0 10% 0;
 }
 .higlightSpan {
   color: var(--high-light);
@@ -153,9 +154,31 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  column-gap: 10%;
 }
 #benefits .benefitIcon {
+  width: 25%;
+}
+#benefits .alone {
   width: 15%;
+}
+blockquote {
+  margin: 10% 0 10% 0;
+  font-size: small;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  column-gap: 10%;
+}
+.grid img {
+  width: 90%;
+}
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* ------------about me page styles--------------- */
 .aboutContent {
