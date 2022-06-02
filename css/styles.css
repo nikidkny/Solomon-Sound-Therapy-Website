@@ -800,6 +800,13 @@ blockquote {
   margin-right: 10%;
 }
 /* ------------about me page styles--------------- */
+.gridLayoutMePage2 p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.gridLayoutMePage2 {
+  padding: 10% 10% 5% 10%;
+}
 #aboutMeMain {
   display: grid;
 }
@@ -819,7 +826,7 @@ h2 {
   margin-bottom: 5%;
 }
 #aboutMeMain img {
-  width: 50%;
+  width: 60%;
 }
 #qualifications {
   background-color: var(--light-background);
@@ -1293,7 +1300,30 @@ h2 {
   .aboutJudyVideo {
     width: 80%;
   }
-
+  .gridLayoutMePage2 {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 5% 0 5% 5%;
+    align-items: center;
+    justify-items: end;
+  }
+  .experienceGridLayout {
+    grid-column: 1;
+  }
+  .aboutMeLayoutSide img {
+    width: 80%;
+    grid-column: 2;
+  }
+  .aboutMeLayoutSide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #qualifications {
+    grid-row: 4;
+    grid-column: span 2;
+  }
   /* ----------------- page stlyes ----------------- */
   .testcontainer {
     gap: 3vw;
