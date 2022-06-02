@@ -33,7 +33,7 @@ li {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 2px dotted red;
+  /* outline: 2px dotted red; */
 }
 
 /* fonts */
@@ -50,7 +50,8 @@ h3 {
   font: /* 2.187rem destop size */ bold calc(0.7em + 1vw) / 3vh "Philosopher",
     sans-serif;
 }
-p {
+p,
+li {
   font: /* 1rem destop size */ calc(0.7em + 0.5vw) / 4vh "Lato", sans-serif;
 }
 
@@ -162,7 +163,7 @@ nav ul ul li:last-child {
 /* home main first section */
 .sect1 {
   max-width: calc(80% + 2vw);
-  margin: 0 auto;
+  margin: 0 auto 3em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
   gap: 2em;
@@ -185,7 +186,7 @@ h1 {
   border-radius: 10px;
   font: var(--button-text);
 }
-.container {  
+.container {
   display: grid;
   place-items: center;
   place-content: center;
@@ -195,7 +196,6 @@ h1 {
     #e89923 0%,
     rgba(232, 153, 35, 0) 100%
   );
-  
 }
 .firstImg {
   width: 55vw;
@@ -204,22 +204,22 @@ h1 {
 }
 .secondImg {
   position: absolute;
-
-  justify-self: flex-start;
-  width: 30vw;
-  aspect-ratio: 1/1;
+  justify-self: baseline;
+  /* align-self: flex-end; */
+  width: 33vw;
   border-radius: 250px 250px 0px 0px;
 }
 /* home main second section */
 .sect2 {
   background-color: var(--light-background);
+  padding: 2em;
 }
 .sect2 h2 {
   padding: 1em 0;
   text-align: center;
 }
 .testcontainer {
-  max-width: 80%;
+  width: auto;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
@@ -228,8 +228,8 @@ h1 {
 .testcontainer div {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  justify-content: center;
+  gap: 1.5em;
+  /* justify-content: center; */
   align-items: center;
 }
 .testim1 {
@@ -261,9 +261,8 @@ h1 {
   font: var(--button-text);
   text-align: center;
 }
-.sec3 .container {  
- max-width: 50vw;
-  
+.sec3 .container {
+  max-width: 50vw;
 }
 .thirdImg {
   width: 50vw;
@@ -282,23 +281,44 @@ h1 {
   margin: 1em auto;
 }
 .sect4 ul {
-  margin: calc(0.7em + 1vw);
+  margin: calc(3em + 1vw);
   display: flex;
   flex-flow: row wrap;
   gap: calc(1em + 1vw);
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .sect4 ul li {
-  flex: 1 1 30%;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
   align-items: center;
 }
 .icons {
   margin: 0.5em;
   max-width: 3em;
 }
+/* home main fifth section */
+.services h3 {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+.services ul {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5em;
+}
+.services li {
+  list-style: disc;
+}
+.services a {
+  color: var(--high-light);
+  text-decoration: underline;
+  font: bold var(--captions);
+  display: block;
+ 
+}
+
 /*---------  PRODUCT LIST STYLES ---------*/
 
 .page-headings {
@@ -694,11 +714,10 @@ h1 {
 
   .firstImg {
     width: 35vw;
-    aspect-ratio: 1/1;
-    left: 8vw;
-    top: 5vh;
   }
-
+  .secondImg {
+    width: 20vw;
+  }
   /* home page section 2 style */
   .testcontainer {
     max-width: 90%;
@@ -771,11 +790,6 @@ h1 {
     display: block;
   } */
 
-  /* home page section 1 style */
-  
-  .secondImg {
-    width: 18vw;
-  }
   /* home page section 2 style */
   .testcontainer {
     max-width: 90%;
@@ -793,8 +807,16 @@ h1 {
   .book {
     margin-left: calc(1.3em + 1vw);
   }
+  /* home page style sect 4 */
+  .sect4 ul {
+    margin: calc(6em + 1vw);
+  }
 }
 @media screen and (min-width: 960px) {
+  p,
+li {
+  font-size:1rem;
+}
   #product-list-container {
     justify-content: flex-start;
   }
@@ -847,6 +869,11 @@ h1 {
     flex-direction: row;
     align-items: center;
   }
+  /* home page style fifth section */
+  .testcontainer.services{
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 5vw;
+  }
 }
 /* ------------------destop styles ----------------------------------------*/
 @media screen and (min-width: 1024px) {
@@ -875,7 +902,15 @@ h1 {
   .testcontainer {
     gap: 3vw;
   }
- 
+  .sect4 ul li {
+    flex: 1 1 30%;
+  }
+
+   /* home page style fifth section */
+   .testcontainer.services{
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 5vw;
+  }
 }
 /* destop styles */
 @media screen and (min-width: 1200px) {
