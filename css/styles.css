@@ -50,7 +50,8 @@ h3 {
   font: /* 2.187rem destop size */ bold calc(0.7em + 1vw) / 3vh "Philosopher",
     sans-serif;
 }
-p {
+p,
+li {
   font: /* 1rem destop size */ calc(0.7em + 0.5vw) / 4vh "Lato", sans-serif;
 }
 
@@ -163,9 +164,10 @@ nav ul ul li:last-child {
 /* home main first section */
 .sect1 {
   max-width: calc(80% + 2vw);
-  margin: 0 auto;
+  margin: 2em auto 3em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: 2em;
 }
 
 .sect1 div:first-child {
@@ -178,18 +180,21 @@ h1 {
 }
 .bookbutton {
   color: var(--bcw);
-  width: calc(9em + 2vw);
-  text-align: center;
-  background-color: var(--high-light);
-  padding: 0.6em 0.05em;
-  border-radius: 10px;
+  display: block;
+  padding: 0.6em 0.8em;
   font: var(--button-text);
+  text-align: center;
+  border: solid 2px var(--high-light);
+  width: calc(9em + 2vw);
+  background-color: var(--high-light);
+  border-radius: 10px;
 }
 .container {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1/1.1;
   margin: 0 auto;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+  place-content: center;
   background: radial-gradient(
     50% 50% at 50% 50%,
     #e89923 0%,
@@ -197,31 +202,27 @@ h1 {
   );
 }
 .firstImg {
-  position: relative;
   width: 55vw;
   aspect-ratio: 1/1;
-  left: 16vw;
-  top: 10vh;
   border-radius: 250px 250px 0px 0px;
 }
 .secondImg {
   position: absolute;
-  width: 30vw;
-  aspect-ratio: 1/1;
-  left: 10vw;
-  top: calc(7em + 8vh);
+  justify-self: baseline;
+  width: 33vw;
   border-radius: 250px 250px 0px 0px;
 }
 /* home main second section */
 .sect2 {
   background-color: var(--light-background);
+  padding: 2em;
 }
 .sect2 h2 {
   padding: 1em 0;
   text-align: center;
 }
 .testcontainer {
-  max-width: 80%;
+  width: auto;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
@@ -230,9 +231,13 @@ h1 {
 .testcontainer div {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  justify-content: center;
+  gap: 1.5em;
   align-items: center;
+  border-left: solid 1px var(--headings);
+  padding-left: 2em;
+}
+.testcontainer div:first-child {
+  border: none;
 }
 .testim1 {
   max-width: calc(7em + 1vw);
@@ -245,7 +250,8 @@ h1 {
 /* home main third section */
 .sect3 {
   max-width: calc(70% + 2vw);
-  margin: 3em auto;
+  aspect-ratio: 7/0.6;
+  margin: 3em auto 1em;
 }
 .sect3 h2 {
   text-align: center;
@@ -262,12 +268,12 @@ h1 {
   font: var(--button-text);
   text-align: center;
 }
+.sect3 div:first-child {
+  margin-bottom: 3em;
+}
 .thirdImg {
-  width: 55vw;
-  margin: 4em auto;
-  aspect-ratio: 1/1;
-  background: url(../images/thirdImg.jpg) no-repeat center;
-  background-size: 100%;
+  width: 50vw;
+  margin: 0 auto;
 }
 .sect3 span {
   color: var(--high-light);
@@ -276,16 +282,67 @@ h1 {
   margin: 2em auto;
 }
 /* home main fourth section */
+.sect4 h2 {
+  text-align: center;
+  font-weight: 400;
+  margin: 1em auto;
+}
 .sect4 ul {
-  width: 80%;
-  margin: 6vw auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: calc(3em + 1vw);
+  display: flex;
+  flex-flow: row wrap;
+  gap: calc(1em + 1vw);
+  justify-content: space-around;
+  align-items: center;
+}
+.sect4 ul li {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 .icons {
-  width: 38px;
-  height: 39px;
+  margin: 0.5em;
+  max-width: 3em;
 }
+/* home main fifth section */
+.services h3 {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+.services ul {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5em;
+}
+.services li {
+  list-style: disc;
+}
+.services a {
+  color: var(--high-light);
+  text-decoration: underline;
+  font: bold var(--captions);
+  display: block;
+}
+/* home main fifth section */
+.sect5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5em;
+  max-width: calc(80% + 2vw);
+  margin: 3em auto 1em;
+  justify-content: center;
+}
+.sect5 div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 1em;
+}
+.fourthImg {
+  max-width: 100%;
+}
+
 /*---------  PRODUCT LIST STYLES ---------*/
 
 .page-headings {
@@ -786,11 +843,6 @@ h2 {
 /* ------------small tablet styles--------------- */
 @media screen and (min-width: 647px) {
   /* home page section 1 style */
-  .sect1 {
-    max-width: calc(90% + 1vw);
-    margin-bottom: 5em;
-  }
-
   .sect1 div:first-child {
     gap: 4vh;
     justify-content: center;
@@ -807,20 +859,11 @@ h2 {
     font: var(--button-text);
   }
 
-  .container {
-    aspect-ratio: 1/1.2;
-  }
   .firstImg {
     width: 35vw;
-    aspect-ratio: 1/1;
-    left: 8vw;
-    top: 5vh;
   }
   .secondImg {
-    width: 25vw;
-    aspect-ratio: 1/1;
-    left: 5vw;
-    top: 25vh;
+    width: 20vw;
   }
   /* home page section 2 style */
   .testcontainer {
@@ -913,10 +956,6 @@ h2 {
     display: block;
   } */
 
-  /* home page section 1 style */
-  .container {
-    aspect-ratio: 1/1;
-  }
   /* home page section 2 style */
   .testcontainer {
     max-width: 90%;
@@ -948,8 +987,16 @@ h2 {
   #benefits .alone {
     width: 5%;
   }
+  /* home page style sect 4 */
+  .sect4 ul {
+    margin: calc(6em + 1vw);
+  }
 }
 @media screen and (min-width: 960px) {
+  p,
+  li {
+    font-size: 1rem;
+  }
   #product-list-container {
     justify-content: flex-start;
   }
@@ -1002,6 +1049,11 @@ h2 {
     flex-direction: row;
     align-items: center;
   }
+  /* home page style fifth section */
+  .testcontainer.services {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 5vw;
+  }
 }
 /* ------------------destop styles ----------------------------------------*/
 @media screen and (min-width: 1024px) {
@@ -1018,9 +1070,6 @@ h2 {
     font: bold calc(1.3em + 1vw) / 5vh "Philosopher", sans-serif;
   }
   /* home page section 1 style */
-  .sect1 {
-    max-width: calc(90% + 1vw);
-  }
 
   .sect1 div:first-child {
     gap: 4vh;
@@ -1128,6 +1177,18 @@ h2 {
   }
   .aboutJudyVideo {
     width: 80%;
+  }
+  .testcontainer {
+    gap: 3vw;
+  }
+  .sect4 ul li {
+    flex: 1 1 30%;
+  }
+
+  /* home page style fifth section */
+  .testcontainer.services {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 5vw;
   }
 }
 /* -----------------destop styles -----------------*/
