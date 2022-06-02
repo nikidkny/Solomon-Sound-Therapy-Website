@@ -716,6 +716,136 @@ h1 {
   margin-bottom: 30px;
 }
 
+#aboutTContent1 p {
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+#aboutTContent2 {
+  margin: 5% 10% 0 10%;
+}
+#aboutTContent2 p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.imgSize img {
+  width: 40%;
+  margin: 5% 0 5% 0;
+}
+.higlightSpan {
+  color: var(--high-light);
+}
+#benefits {
+  background-color: var(--light-background);
+  padding: 5% 10% 5% 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 2%;
+}
+#benefits h2 {
+  grid-column: span 2;
+}
+#benefits :nth-child(6) {
+  grid-column: span 2;
+}
+#benefits > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10%;
+}
+#benefits .benefitIcon {
+  width: 25%;
+}
+#benefits .alone {
+  width: 15%;
+}
+blockquote {
+  margin: 5% 0 5% 0;
+  font-size: 0.85em;
+  font-style: italic;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  column-gap: 10%;
+}
+.grid img {
+  width: 90%;
+}
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hiddenH2Small {
+  display: none;
+}
+.gridSmallSize {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.gridLayoutLaptopHeal {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/* ------------about me page styles--------------- */
+.gridLayoutMePage2 p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.gridLayoutMePage2 {
+  padding: 10% 10% 5% 10%;
+}
+#aboutMeMain {
+  display: grid;
+}
+.aboutContent1 {
+  padding: 10% 10% 5% 10%;
+}
+.aboutContent2 {
+  padding: 10%;
+}
+.aboutContent1 h1,
+h2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.aboutContent2 p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#aboutMeMain img {
+  width: 60%;
+}
+#qualifications {
+  background-color: var(--light-background);
+  padding: 10%;
+}
+#qualifications ul {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.gradientBackground {
+  background: radial-gradient(circle at center, #e8992394 0%, transparent 60%);
+}
+#gradientBackgroundright {
+  background: radial-gradient(circle at center, #e8992394 0%, transparent 60%);
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  margin-top: 0;
+}
+#aboutMeMain .imageSizeBigger {
+  width: 70%;
+}
+.aboutJudyVideo {
+  width: 100%;
+}
+.aboutMeImgHidden {
+  display: none;
+}
 /* ------------small tablet styles--------------- */
 @media screen and (min-width: 647px) {
   /* home page section 1 style */
@@ -922,6 +1052,99 @@ h1 {
     padding: 0.1em 0.8em;
   }
 
+  .secondImg {
+    width: 18vw;
+    top: 40vh;
+  }
+  .testcontainer {
+    gap: 3vw;
+  }
+  /* -----------------about Therapy page stlyes ----------------- */
+  #benefits {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 0%;
+  }
+  #benefits h2 {
+    grid-column: span 6;
+  }
+  #benefits :nth-child(2) {
+    grid-column: span 2;
+  }
+  #benefits :nth-child(3) {
+    grid-column: span 2;
+  }
+  #benefits :nth-child(4) {
+    grid-column: span 2;
+  }
+  #benefits :nth-child(5) {
+    grid-column: 2 / span 2;
+  }
+  #benefits :nth-child(6) {
+    grid-column: 4 / span 2;
+  }
+  #benefits :nth-child(5),
+  #benefits :nth-child(6) {
+    display: flex;
+  }
+  #benefits .iconLaptopSize {
+    width: 20%;
+  }
+  #benefits .alone {
+    width: 20%;
+  }
+
+  /* -----------------about Her page stlyes ----------------- */
+  #aboutMeMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .aboutMeImgHidden {
+    display: block;
+  }
+  .aboutContent2 {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 5% 0 5% 5%;
+    align-items: center;
+    justify-items: end;
+  }
+  .gridLayoutLaptop {
+    grid-column: 1;
+  }
+  .aboutContent2 video {
+    grid-column: 2;
+  }
+  .aboutJudyVideo {
+    width: 80%;
+  }
+  .gridLayoutMePage2 {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 5% 0 5% 5%;
+    align-items: center;
+    justify-items: end;
+  }
+  .experienceGridLayout {
+    grid-column: 1;
+  }
+  .aboutMeLayoutSide img {
+    width: 80%;
+    grid-column: 2;
+  }
+  .aboutMeLayoutSide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #qualifications {
+    grid-row: 4;
+    grid-column: span 2;
+  }
+  /* ----------------- page stlyes ----------------- */
   .testcontainer {
     gap: 3vw;
   }
