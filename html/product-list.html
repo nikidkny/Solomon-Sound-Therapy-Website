@@ -13,63 +13,43 @@
   </head>
   <body>
     <header>
-      <div class="navMobil">
-        <a href=""
-          ><img
-            class="logoImg"
-            src="./images/SolomonLogo.svg"
-            alt="Solomon Logo"
-        /></a>
-        <a class="hamburguer" href="#navBar" aria-label="Open main menu.">
-          <svg viwBox="0 0 10 10">
-            <rect x="10" y="10" width="50" height="8" />
-            <rect x="10" y="25" width="50" height="8" />
-            <rect x="10" y="40" width="50" height="8" /></svg
-        ></a>
-      </div>
-      <nav id="navBar">
-        <ul>
-          <li class="logo">
-            <a href=""
-              ><img
-                class="logoImg"
-                src="./images/SolomonLogo.svg"
-                alt="Solomon Logo"
-            /></a>
-          </li>
-          <li><a href="#">Home</a></li>
-          <li>
-            <a href=""
-              >Services
-              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li><a href="">About</a></li>
-          <li class="book">
-            <a href=""
-              >Book Now
-              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i
-            ></a>
-          </li>
-          <li>
-            <a href=""
-              ><i class="fa-solid fa-cart-shopping" aria-hidden="true">.</i></a
+      <nav class="navbar">
+        <img src="../images/SolomonLogo.svg" alt="header-logo" width="40" />
+        <a href="javascript:void(0);" class="icon" aria-label="burger-menu">
+          <i class="fa fa-bars fa-xl"></i>
+        </a>
+        <div class="mobile-nav">
+          <div class="close-nav-icon">
+            <a
+              href="javascript:void(0);"
+              class="close-nav"
+              aria-label="close-nav"
             >
-          </li>
-        </ul>
-        <a class="close" href="#"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="60"
-            height="60"
-            fill="currentColor"
-            class="bi bi-x"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-            /></svg
-        ></a>
+              <i class="fa-solid fa-xmark fa-2xl"></i>
+            </a>
+          </div>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li>
+              <a href="">Services <i class="fa-solid fa-chevron-down"></i></a>
+              <div class="services-nav-dropdown">
+                <template id="services-template">
+                  <ul>
+                    <li class="service-link">
+                      <a href="" aria-label="service-nav-link"></a>
+                    </li>
+                  </ul>
+                </template>
+                <ul>
+                  <li><a href="">HALLO</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="">Sound Therapy</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+          <a href="" class="book-now-button-small">BOOK NOW</a>
+        </div>
       </nav>
     </header>
     <main>
@@ -82,7 +62,7 @@
         <div></div>
       </div>
       <div id="product-list-container">
-        <template>
+        <template id="product-list-template">
           <div class="product-container">
             <div class="product-image-container">
               <a href="" aria-label="session-image">
@@ -178,5 +158,6 @@
       </div>
     </footer>
     <script src="../js/productList.js"></script>
+    <script src="../js/navBar.js"></script>
   </body>
 </html>

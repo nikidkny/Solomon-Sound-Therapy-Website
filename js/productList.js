@@ -15,7 +15,6 @@ fetch(url, options)
   })
   .then((data) => {
     //to check if we have the data
-    console.log(data);
     handleData(data);
     //hide spinner when we get the posters
     let spinner = document.querySelector(".spinner");
@@ -26,15 +25,14 @@ fetch(url, options)
   });
 
 function handleData(sessions) {
+  handleNavData(sessions);
   sessions.forEach((session) => {
-    console.log(session);
     // 1. Grap the template
-    const template = document.querySelector("template").content;
+    const template = document.querySelector("#product-list-template").content;
 
     // 2. Clone template
     const clone = template.cloneNode(true);
     // 4. Populated with data
-    console.log(session._id);
 
     clone.querySelector("img").src = session.SessionImage;
     clone.querySelector(".product-price").textContent =
