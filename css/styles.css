@@ -660,10 +660,12 @@ h1 {
   margin-bottom: 30px;
 }
 /* ------------about therapy page styles--------------- */
+#aboutTherapyMain {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(323.5px, 1fr));
+}
 .aboutTContent {
   margin: 10%;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); */
 }
 .imgSize img {
   width: 40%;
@@ -678,6 +680,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  column-gap: 2%;
 }
 #benefits h2 {
   grid-column: span 2;
@@ -716,8 +719,13 @@ blockquote {
   justify-content: center;
 }
 /* ------------about me page styles--------------- */
+#aboutMeMain {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(323.5px, 1fr));
+}
 .aboutContent {
   padding: 10%;
+  margin-bottom: 10%;
 }
 #aboutMeMain img {
   width: 50%;
@@ -726,9 +734,17 @@ blockquote {
   background-color: var(--light-background);
   padding: 10%;
 }
-/* .gradientBackground {
+.gradientBackground {
   background: radial-gradient(circle at center, #e8992394 0%, transparent 60%);
-} */
+}
+#gradientBackgroundright {
+  background: radial-gradient(circle at center, #e8992394 0%, transparent 60%);
+  display: grid;
+  justify-items: end;
+}
+#aboutMeMain .imageSizeBigger {
+  width: 70%;
+}
 /* ------------small tablet styles--------------- */
 @media screen and (min-width: 647px) {
   /* home page section 1 style */
