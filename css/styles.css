@@ -667,6 +667,11 @@ h1 {
 #aboutTContent1 {
   margin: 10% 10% 1% 10%;
 }
+
+#aboutTContent1 p {
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
 #aboutTContent2 {
   margin: 5% 10% 0 10%;
 }
@@ -725,14 +730,28 @@ blockquote {
 .hiddenH2Small {
   display: none;
 }
+.gridSmallSize {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 /* ------------about me page styles--------------- */
 #aboutMeMain {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(323.5px, 1fr));
 }
-.aboutContent {
+.aboutContent1 {
+  padding: 10% 10% 5% 10%;
+}
+.aboutContent2 {
   padding: 10%;
-  margin-bottom: 10%;
+}
+.aboutContent1 h1,
+h2 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.aboutContent2 p {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 #aboutMeMain img {
   width: 50%;
@@ -741,6 +760,10 @@ blockquote {
   background-color: var(--light-background);
   padding: 10%;
 }
+#qualifications ul {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
 .gradientBackground {
   background: radial-gradient(circle at center, #e8992394 0%, transparent 60%);
 }
@@ -748,12 +771,17 @@ blockquote {
   background: radial-gradient(circle at center, #e8992394 0%, transparent 60%);
   display: grid;
   justify-items: end;
+  align-items: center;
+  margin-top: 0;
 }
 #aboutMeMain .imageSizeBigger {
   width: 70%;
 }
 .aboutJudyVideo {
   width: 100%;
+}
+.aboutMeImgHidden {
+  display: none;
 }
 /* ------------small tablet styles--------------- */
 @media screen and (min-width: 647px) {
@@ -809,7 +837,7 @@ blockquote {
   }
   #aboutTherapyMain .tablet h1 {
     align-self: center;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
   }
   #aboutTherapyMain .tablet .gradientBackground {
     grid-column: 2/2;
@@ -1005,10 +1033,10 @@ blockquote {
     width: 18vw;
     top: 40vh;
   }
-
   .testcontainer {
     gap: 3vw;
   }
+  /* -----------------about Therapy page stlyes ----------------- */
   #benefits {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -1053,13 +1081,20 @@ blockquote {
   }
   .gridLaptopSize {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 0.1fr 1fr;
-    margin-right: 10%;
+    margin: 10% 0 0 0;
     align-items: center;
   }
   .gridLaptopSize .LaptopSizeImg {
     grid-row: span 2;
+  }
+  .laptopSize img {
+    width: 85%;
+  }
+  .imgSize img {
+    width: 30%;
+    margin-bottom: 10%;
   }
   .h2LaptopSizeGrid {
     grid-row: 1;
@@ -1069,8 +1104,33 @@ blockquote {
     grid-row: 2;
     grid-column: 2;
   }
+  /* -----------------about Her page stlyes ----------------- */
+  #aboutMeMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .aboutMeImgHidden {
+    display: block;
+  }
+  .aboutContent2 {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 5% 0 5% 5%;
+    align-items: center;
+    justify-items: end;
+  }
+  .gridLayoutLaptop {
+    grid-column: 1;
+  }
+  .aboutContent2 video {
+    grid-column: 2;
+  }
+  .aboutJudyVideo {
+    width: 80%;
+  }
 }
-/* destop styles */
+/* -----------------destop styles -----------------*/
 @media screen and (min-width: 1200px) {
   .page-headings {
     font-size: 50px;
