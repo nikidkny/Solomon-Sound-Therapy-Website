@@ -211,7 +211,7 @@ h1 {
 /* home main second section */
 .sect2 {
   background-color: var(--light-background);
-  padding: 2em;
+  padding-bottom: 4em;
 }
 .sect2 h2 {
   padding: 1em 0;
@@ -258,7 +258,7 @@ h1 {
   justify-content: center;
   gap: 1em;
 }
-.sect3 h2, 
+.sect3 h2,
 .sect5 h2 {
   text-align: center;
   color: var(--headings);
@@ -344,7 +344,7 @@ h1 {
   font-size: 1.3em;
   font-weight: 400;
   margin: 2em auto;
-  }
+}
 .services ul {
   display: flex;
   flex-flow: column nowrap;
@@ -830,6 +830,7 @@ h2 {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
 .aboutContent2 p {
   margin-top: 5%;
   margin-bottom: 5%;
