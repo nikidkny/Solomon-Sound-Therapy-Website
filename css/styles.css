@@ -236,7 +236,8 @@ h1 {
   border-left: solid 1px var(--headings);
   padding-left: 2em;
 }
-.testcontainer div:first-child {
+.testcontainer div:first-child,
+.testcontainer div:last-child {
   border: none;
 }
 .testim1 {
@@ -314,8 +315,9 @@ h1 {
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(267.5px, 1fr));
   gap: 5vw;
+  padding: 1em;
 }
 .services div {
   display: flex;
@@ -993,6 +995,15 @@ blockquote {
   .dropDown:hover > .submenu {
     display: block;
   } */
+  /* home page section 2 style */
+  .testcontainer {
+    max-width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(281px, 1fr));
+  }
+  .services div {
+    border-left: 1px solid var(--headings);
+    padding-left: 2em;
+  }
   /* ------------about therapy page styles--------------- */
   #aboutTContent2 p {
     margin-top: 5%;
@@ -1078,11 +1089,6 @@ blockquote {
   }
   .SmallerImg img {
     width: 90%;
-  }
-  /* home page section 2 style */
-  .testcontainer {
-    max-width: 90%;
-    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   }
 }
 
@@ -1225,11 +1231,6 @@ blockquote {
   .book-date-time-container > p {
     flex-direction: row;
     align-items: center;
-  }
-  /* home page style fifth section */
-  .testcontainer.services {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 5vw;
   }
 }
 /* ------------------destop styles ----------------------------------------*/
