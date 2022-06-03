@@ -241,7 +241,7 @@ h1 {
   font: var(--captions);
 }
 
-/* home main third section */
+/* home main third and fifth sections */
 .sect3,
 .sect5 {
   display: grid;
@@ -258,7 +258,8 @@ h1 {
   justify-content: center;
   gap: 1em;
 }
-.sect3 h2 {
+.sect3 h2, 
+.sect5 h2 {
   text-align: center;
   color: var(--headings);
 }
@@ -320,7 +321,7 @@ h1 {
   margin: 0.5em;
   max-width: 3em;
 }
-/* home main fifth section */
+/* home main services section */
 .services {
   width: 90%;
   margin: 0 auto;
@@ -343,7 +344,7 @@ h1 {
   font-size: 1.3em;
   font-weight: 400;
   margin: 2em auto;
-}
+  }
 .services ul {
   display: flex;
   flex-flow: column nowrap;
@@ -1097,112 +1098,112 @@ h2 {
     padding-left: 2em;
   }
 }
-  /* -----------------about Therapy page stlyes ----------------- */
-  #benefits {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 0%;
-  }
-  #benefits h2 {
-    grid-column: span 6;
-  }
-  #benefits :nth-child(2) {
-    grid-column: span 2;
-  }
-  #benefits :nth-child(3) {
-    grid-column: span 2;
-  }
-  #benefits :nth-child(4) {
-    grid-column: span 2;
-  }
-  #benefits :nth-child(5) {
-    grid-column: 2 / span 2;
-  }
-  #benefits :nth-child(6) {
-    grid-column: 4 / span 2;
-  }
-  #benefits :nth-child(5),
-  #benefits :nth-child(6) {
-    display: flex;
-  }
-  #benefits .iconLaptopSize {
-    width: 20%;
-  }
-  #benefits .alone {
-    width: 20%;
-  }
+/* -----------------about Therapy page stlyes ----------------- */
+#benefits {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 0%;
+}
+#benefits h2 {
+  grid-column: span 6;
+}
+#benefits :nth-child(2) {
+  grid-column: span 2;
+}
+#benefits :nth-child(3) {
+  grid-column: span 2;
+}
+#benefits :nth-child(4) {
+  grid-column: span 2;
+}
+#benefits :nth-child(5) {
+  grid-column: 2 / span 2;
+}
+#benefits :nth-child(6) {
+  grid-column: 4 / span 2;
+}
+#benefits :nth-child(5),
+#benefits :nth-child(6) {
+  display: flex;
+}
+#benefits .iconLaptopSize {
+  width: 20%;
+}
+#benefits .alone {
+  width: 20%;
+}
 
-  /* -----------------about Her page stlyes ----------------- */
-  #aboutMeMain {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .aboutMeImgHidden {
-    display: block;
-  }
-  .aboutContent2 {
-    grid-column: span 2;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 5% 0 5% 5%;
-    align-items: center;
-    justify-items: end;
-  }
-  .gridLayoutLaptop {
-    grid-column: 1;
-  }
-  .aboutContent2 video {
-    grid-column: 2;
-  }
-  .aboutJudyVideo {
-    width: 80%;
-  }
-  .gridLayoutMePage2 {
-    grid-column: span 2;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 5% 0 5% 5%;
-    align-items: center;
-    justify-items: end;
-  }
-  .experienceGridLayout {
-    grid-column: 1;
-  }
-  .aboutMeLayoutSide img {
-    width: 80%;
-    grid-column: 2;
-  }
-  .aboutMeLayoutSide {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  #qualifications li {
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-  #qualifications h3 {
-    margin-top: 10%;
-    margin-bottom: 5%;
-  }
-  #qualifications {
-    grid-row: 4;
-    grid-column: span 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 5%;
-    column-gap: 5%;
-  }
-  .presentTill2010 {
-    border-right: 2px solid black;
-    grid-column: 1;
-  }
-  .pastFrom2010 {
-    grid-column: 2;
-  }
-  /* ----------------- page stlyes ----------------- */
-  
+/* -----------------about Her page stlyes ----------------- */
+#aboutMeMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.aboutMeImgHidden {
+  display: block;
+}
+.aboutContent2 {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 5% 0 5% 5%;
+  align-items: center;
+  justify-items: end;
+}
+.gridLayoutLaptop {
+  grid-column: 1;
+}
+.aboutContent2 video {
+  grid-column: 2;
+}
+.aboutJudyVideo {
+  width: 80%;
+}
+.gridLayoutMePage2 {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 5% 0 5% 5%;
+  align-items: center;
+  justify-items: end;
+}
+.experienceGridLayout {
+  grid-column: 1;
+}
+.aboutMeLayoutSide img {
+  width: 80%;
+  grid-column: 2;
+}
+.aboutMeLayoutSide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#qualifications li {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+#qualifications h3 {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+#qualifications {
+  grid-row: 4;
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5%;
+  column-gap: 5%;
+}
+.presentTill2010 {
+  border-right: 2px solid black;
+  grid-column: 1;
+}
+.pastFrom2010 {
+  grid-column: 2;
+}
+/* ----------------- page stlyes ----------------- */
+
 /* destop styles */
 @media screen and (min-width: 1200px) {
   .page-headings {
