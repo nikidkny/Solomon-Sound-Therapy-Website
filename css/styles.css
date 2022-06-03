@@ -248,6 +248,11 @@ h1 {
   font: var(--captions);
 }
 
+/* home main third section */
+.sect3 {
+  max-width: calc(70% + 2vw);
+  aspect-ratio: 7/0.6;
+}
 /* home main third and fifth sections */
 .sect3,
 .sect5 {
@@ -322,6 +327,7 @@ h1 {
   margin: 0.5em;
   max-width: 3em;
 }
+/* home main fifth section */
 /* home main services section */
 .services {
   width: 90%;
@@ -749,9 +755,25 @@ h1 {
   grid-template-columns: repeat(auto-fill, minmax(323.5px, 1fr));
 }
 #aboutTContent1 {
-  margin: 10% 10% 1% 10%;
+  display: grid;
+  margin: 10% 10% 10% 10%;
 }
-
+#aboutTContent1 h1 {
+  grid-column: 1;
+}
+#aboutTContent1 .aboutTContent1Pharagraps {
+  grid-column: 1;
+}
+#aboutTContent1 .firstBlockquoteTherapy {
+  grid-column: span 2;
+  grid-row: 3;
+}
+#aboutTContent1 .gradientBackground video {
+  width: 100%;
+}
+#aboutTContent1 .gradientBackground {
+  grid-row: 4;
+}
 #aboutTContent1 p {
   margin-top: 1%;
   margin-bottom: 3%;
@@ -821,6 +843,14 @@ blockquote {
 .gridSmallSize {
   margin-left: 10%;
   margin-right: 10%;
+}
+.gridLayoutLaptopHeal h2 {
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+.gridLayoutLaptopHeal p {
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 .gridLayoutLaptopHeal {
   margin-left: 10%;
@@ -917,21 +947,6 @@ blockquote {
     display: grid;
     grid-template-columns: 1fr;
   }
-  #aboutTherapyMain .tablet {
-    display: grid;
-    grid-template-columns: 1fr 0.2fr;
-  }
-  #aboutTherapyMain .tablet h1 {
-    align-self: center;
-    padding-bottom: 5%;
-  }
-  #aboutTherapyMain .tablet .gradientBackground {
-    grid-column: 2/2;
-    grid-row: 1 / span 2;
-  }
-  #aboutTherapyMain .tablet blockquote {
-    grid-column: span 2;
-  }
 }
 /* ------------medium tablet styles--------------- */
 
@@ -1008,6 +1023,34 @@ blockquote {
     padding-left: 2em;
   }
   /* ------------about therapy page styles--------------- */
+  #aboutTContent1 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    column-gap: 5%;
+  }
+  #aboutTContent1 h1 {
+    margin: 10% 0 0 10%;
+    grid-column: 1;
+  }
+  #aboutTContent1 .aboutTContent1Pharagraps {
+    margin: 10% 0 0 10%;
+    grid-column: 1;
+  }
+  #aboutTContent1 .firstBlockquoteTherapy {
+    grid-column: span 2;
+    grid-row: 3;
+    text-align: center;
+  }
+  #aboutTContent1 .gradientBackground video {
+    width: 90%;
+  }
+  #aboutTContent1 .gradientBackground {
+    grid-row: 2;
+    grid-column: 2;
+  }
   #aboutTContent2 p {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -1278,13 +1321,20 @@ blockquote {
   }
 
   /* -----------------about Therapy page stlyes ----------------- */
+  .firstBlockquoteTherapy {
+    font-size: 1.5em;
+    text-align: center;
+  }
   #benefits {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 0%;
+    row-gap: 20%;
+    padding-top: 5%;
+    padding-bottom: 10%;
   }
   #benefits h2 {
+    padding-top: 5%;
     grid-column: span 6;
   }
   #benefits :nth-child(2) {
@@ -1307,10 +1357,10 @@ blockquote {
     display: flex;
   }
   #benefits .iconLaptopSize {
-    width: 20%;
+    width: 15%;
   }
   #benefits .alone {
-    width: 20%;
+    width: 15%;
   }
 
   /* -----------------about Her page stlyes ----------------- */
@@ -1381,7 +1431,21 @@ blockquote {
   .pastFrom2010 {
     grid-column: 2;
   }
+  /* ----------------- page stlyes ----------------- */
+  .testcontainer {
+    gap: 3vw;
+  }
+  .sect4 ul li {
+    flex: 1 1 30%;
+  }
+
+  /* home page style fifth section */
+  .testcontainer.services {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 5vw;
+  }
 }
+/* -----------------destop styles -----------------*/
 /* ----------------- page stlyes ----------------- */
 
 /* destop styles */
