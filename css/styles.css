@@ -190,8 +190,6 @@ h1 {
   border-radius: 10px;
 }
 .container {
-  margin: 0 auto;
-  aspect-ratio: 1/1;
   display: grid;
   place-items: center;
   place-content: center;
@@ -208,7 +206,7 @@ h1 {
 }
 .secondImg {
   position: absolute;
-  justify-self: baseline;
+  justify-self: left;
   width: 33vw;
   border-radius: 250px 250px 0px 0px;
 }
@@ -252,14 +250,20 @@ h1 {
 .sect3,
 .sect5 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
   max-width: calc(80% + 2vw);
-  margin: 3em auto 1em;
+  margin: 2em auto;
+}
+.sect3 div,
+.sect5 div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 1.5em;
 }
 .sect3 h2,
 .sect5 h2 {
-  text-align: center;
   color: var(--headings);
 }
 .secondarybutton {
@@ -273,11 +277,9 @@ h1 {
   font: var(--button-text);
   text-align: center;
 }
-.sect3 div:first-child {
-  margin-bottom: 3em;
-}
+
 .container2 {
-  max-width: 80%;
+  width: 100%;
   margin: 0 auto;
   aspect-ratio: 1/1;
   display: grid;
@@ -295,9 +297,7 @@ h1 {
 .sect3 span {
   color: var(--high-light);
 }
-.sect3 p {
-  margin: 2em auto;
-}
+
 /* home main fourth section */
 .sect4 h2 {
   text-align: center;
@@ -361,14 +361,9 @@ h1 {
   display: block;
 }
 /* home main fifth section */
-.sect5 div {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  gap: 1.3em;
-}
+
 .fourthImg {
-  max-width: 70%;
+  max-width: 60%;
 }
 /*---------  PRODUCT LIST STYLES ---------*/
 
@@ -1007,6 +1002,12 @@ blockquote {
     border-left: 1px solid var(--headings);
     padding-left: 2em;
   }
+  /* home page sect 3 and 5 style */
+  /*  .sect3,
+  .sect5 {
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  } */
   /* ------------about therapy page styles--------------- */
   #aboutTContent2 p {
     margin-top: 5%;
