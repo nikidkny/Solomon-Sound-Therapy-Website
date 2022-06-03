@@ -213,27 +213,57 @@ h1 {
 /* home main second section */
 .sect2 {
   background-color: var(--light-background);
-  padding-bottom: 4em;
+  padding: 2em 0;
 }
 .sect2 h2 {
   padding: 1em 0;
   text-align: center;
 }
-.testcontainer {
+/* .sect2 div p:last-child {
+  margin-bottom: 4em;
+} */
+/* .testcontainer {
   width: auto;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
   gap: 5vw;
+} */
+.main-carousel{
+  width: 100%;
 }
-.testcontainer div {
+/* .main-carousel div {
+  width: 30em;
+  padding: 0 calc(20px + 3vw);
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1em;
   align-items: center;
   border-left: solid 1px var(--headings);
   padding-left: 2em;
+} */
+/* .main-carousel{
+  width: 100%;
+  
+} */
+
+.carousel-cell {
+  width: 20em;
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
 }
+
+.flickity-viewport {
+  height: 20vh;
+}
+.flickity-button.flickity-prev-next-button.previous,
+.flickity-button.flickity-prev-next-button.next {
+  top: 5em;
+}
+
 .testcontainer div:first-child,
 .testcontainer div:last-child {
   border: none;
@@ -904,10 +934,10 @@ blockquote {
     width: 20vw;
   }
   /* home page section 2 style */
-  .testcontainer {
+  /*  .testcontainer {
     max-width: 90%;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  }
+  } */
   #aboutTherapyMain {
     display: grid;
     grid-template-columns: 1fr;
@@ -994,10 +1024,10 @@ blockquote {
     display: block;
   } */
   /* home page section 2 style */
-  .testcontainer {
+  /*  .testcontainer {
     max-width: 90%;
     grid-template-columns: repeat(auto-fit, minmax(281px, 1fr));
-  }
+  } */
   .services div {
     border-left: 1px solid var(--headings);
     padding-left: 2em;
@@ -1264,19 +1294,16 @@ blockquote {
     width: 18vw;
     /* top: 40vh; */
   }
-  .testcontainer {
+  /* .testcontainer {
     gap: 3vw;
-  }
-  .testcontainer {
-    gap: 3vw;
-  }
+  } */
   .sect4 ul li {
     flex: 1 1 30%;
   }
-  .testcontainer div:last-child {
+  /*   .testcontainer div:last-child {
     border-left: solid 1px var(--headings);
     padding-left: 2em;
-  }
+  } */
 
   /* -----------------about Therapy page stlyes ----------------- */
   #benefits {
