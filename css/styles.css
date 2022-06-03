@@ -750,9 +750,25 @@ h1 {
   grid-template-columns: repeat(auto-fill, minmax(323.5px, 1fr));
 }
 #aboutTContent1 {
-  margin: 10% 10% 1% 10%;
+  display: grid;
+  margin: 10% 10% 10% 10%;
 }
-
+#aboutTContent1 h1 {
+  grid-column: 1;
+}
+#aboutTContent1 .aboutTContent1Pharagraps {
+  grid-column: 1;
+}
+#aboutTContent1 .firstBlockquoteTherapy {
+  grid-column: span 2;
+  grid-row: 3;
+}
+#aboutTContent1 .gradientBackground video {
+  width: 100%;
+}
+#aboutTContent1 .gradientBackground {
+  grid-row: 4;
+}
 #aboutTContent1 p {
   margin-top: 1%;
   margin-bottom: 3%;
@@ -822,6 +838,14 @@ blockquote {
 .gridSmallSize {
   margin-left: 10%;
   margin-right: 10%;
+}
+.gridLayoutLaptopHeal h2 {
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+.gridLayoutLaptopHeal p {
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 .gridLayoutLaptopHeal {
   margin-left: 10%;
@@ -918,21 +942,6 @@ blockquote {
     display: grid;
     grid-template-columns: 1fr;
   }
-  #aboutTherapyMain .tablet {
-    display: grid;
-    grid-template-columns: 1fr 0.2fr;
-  }
-  #aboutTherapyMain .tablet h1 {
-    align-self: center;
-    padding-bottom: 5%;
-  }
-  #aboutTherapyMain .tablet .gradientBackground {
-    grid-column: 2/2;
-    grid-row: 1 / span 2;
-  }
-  #aboutTherapyMain .tablet blockquote {
-    grid-column: span 2;
-  }
 }
 /* ------------medium tablet styles--------------- */
 
@@ -1000,6 +1009,34 @@ blockquote {
     display: block;
   } */
   /* ------------about therapy page styles--------------- */
+  #aboutTContent1 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    column-gap: 5%;
+  }
+  #aboutTContent1 h1 {
+    margin: 10% 0 0 10%;
+    grid-column: 1;
+  }
+  #aboutTContent1 .aboutTContent1Pharagraps {
+    margin: 10% 0 0 10%;
+    grid-column: 1;
+  }
+  #aboutTContent1 .firstBlockquoteTherapy {
+    grid-column: span 2;
+    grid-row: 3;
+    text-align: center;
+  }
+  #aboutTContent1 .gradientBackground video {
+    width: 90%;
+  }
+  #aboutTContent1 .gradientBackground {
+    grid-row: 2;
+    grid-column: 2;
+  }
   #aboutTContent2 p {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -1280,15 +1317,20 @@ blockquote {
   }
 
   /* -----------------about Therapy page stlyes ----------------- */
+  .firstBlockquoteTherapy {
+    font-size: 1.5em;
+    text-align: center;
+  }
   #benefits {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 20%;
     padding-top: 5%;
+    padding-bottom: 10%;
   }
   #benefits h2 {
-    padding-top: 10%;
+    padding-top: 5%;
     grid-column: span 6;
   }
   #benefits :nth-child(2) {
