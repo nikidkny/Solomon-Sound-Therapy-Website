@@ -215,7 +215,7 @@ h1 {
 /* home main second section */
 .sect2 {
   background-color: var(--light-background);
-  padding: 2em;
+  padding-bottom: 4em;
 }
 .sect2 h2 {
   padding: 1em 0;
@@ -247,13 +247,17 @@ h1 {
   font: var(--captions);
 }
 
-/* home main third section */
-.sect3 {
-  max-width: calc(70% + 2vw);
-  aspect-ratio: 7/0.6;
+/* home main third and fifth sections */
+.sect3,
+.sect5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3em;
+  max-width: calc(80% + 2vw);
   margin: 3em auto 1em;
 }
-.sect3 h2 {
+.sect3 h2,
+.sect5 h2 {
   text-align: center;
   color: var(--headings);
 }
@@ -305,7 +309,25 @@ h1 {
   margin: 0.5em;
   max-width: 3em;
 }
-/* home main fifth section */
+/* home main services section */
+.services {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5vw;
+}
+.services div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+}
+.services div div,
+.services div:first-child {
+  border-left: none;
+  padding: 0%;
+}
 .services h3 {
   font-size: 1.3em;
   font-weight: 400;
@@ -821,6 +843,7 @@ blockquote {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+
 .aboutContent2 p {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -1239,6 +1262,17 @@ blockquote {
   .testcontainer {
     gap: 3vw;
   }
+  .testcontainer {
+    gap: 3vw;
+  }
+  .sect4 ul li {
+    flex: 1 1 30%;
+  }
+  .testcontainer div:last-child {
+    border-left: solid 1px var(--headings);
+    padding-left: 2em;
+  }
+
   /* -----------------about Therapy page stlyes ----------------- */
   #benefits {
     display: grid;
@@ -1343,21 +1377,10 @@ blockquote {
   .pastFrom2010 {
     grid-column: 2;
   }
-  /* ----------------- page stlyes ----------------- */
-  .testcontainer {
-    gap: 3vw;
-  }
-  .sect4 ul li {
-    flex: 1 1 30%;
-  }
-
-  /* home page style fifth section */
-  .testcontainer.services {
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 5vw;
-  }
 }
-/* -----------------destop styles -----------------*/
+/* ----------------- page stlyes ----------------- */
+
+/* destop styles */
 @media screen and (min-width: 1200px) {
   .page-headings {
     font-size: 50px;
