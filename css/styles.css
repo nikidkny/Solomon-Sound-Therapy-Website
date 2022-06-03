@@ -276,9 +276,21 @@ h1 {
 .sect3 div:first-child {
   margin-bottom: 3em;
 }
-.thirdImg {
-  width: 30vw;
+.container2 {
+  max-width: 80%;
   margin: 0 auto;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #e89923 0%,
+    rgba(232, 153, 35, 0) 100%
+  );
+}
+.thirdImg {
+  max-width: 100%;
 }
 .sect3 span {
   color: var(--high-light);
@@ -349,24 +361,15 @@ h1 {
   display: block;
 }
 /* home main fifth section */
-.sect5 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 5em;
-  max-width: calc(80% + 2vw);
-  margin: 3em auto 1em;
-  justify-content: center;
-}
 .sect5 div {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  gap: 1em;
+  gap: 1.3em;
 }
 .fourthImg {
-  max-width: 100%;
+  max-width: 70%;
 }
-
 /*---------  PRODUCT LIST STYLES ---------*/
 
 .page-headings {
@@ -1118,7 +1121,7 @@ blockquote {
   }
   /* home page style sect 4 */
   .sect4 ul {
-    margin: calc(6em + 1vw);
+    margin: 2em calc(6em + 1vw);
   }
   /* ------------about therapy page styles--------------- */
   #aboutTContent2 p {
