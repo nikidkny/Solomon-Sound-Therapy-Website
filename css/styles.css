@@ -1284,9 +1284,11 @@ blockquote {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    row-gap: 0%;
+    row-gap: 20%;
+    padding-top: 5%;
   }
   #benefits h2 {
+    padding-top: 10%;
     grid-column: span 6;
   }
   #benefits :nth-child(2) {
@@ -1309,10 +1311,10 @@ blockquote {
     display: flex;
   }
   #benefits .iconLaptopSize {
-    width: 20%;
+    width: 15%;
   }
   #benefits .alone {
-    width: 20%;
+    width: 15%;
   }
 
   /* -----------------about Her page stlyes ----------------- */
