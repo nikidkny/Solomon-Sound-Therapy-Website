@@ -276,7 +276,7 @@ h1 {
   margin-bottom: 3em;
 }
 .thirdImg {
-  width: 50vw;
+  width: 30vw;
   margin: 0 auto;
 }
 .sect3 span {
@@ -1257,7 +1257,7 @@ blockquote {
   }
   .secondImg {
     width: 18vw;
-    top: 40vh;
+    /* top: 40vh; */
   }
   .testcontainer {
     gap: 3vw;
