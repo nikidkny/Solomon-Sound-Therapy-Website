@@ -134,6 +134,7 @@ nav a:hover {
 .close:hover {
   background-color: transparent;
 }
+
 /* Second layer of nav style */
 .dropDown {
   display: block;
@@ -163,7 +164,7 @@ nav ul ul li:last-child {
 /* home main first section */
 .sect1 {
   max-width: calc(80% + 2vw);
-  margin: 2em auto 5em;
+  margin: 2em auto 3em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
   gap: 2em;
@@ -189,6 +190,8 @@ h1 {
   border-radius: 10px;
 }
 .container {
+  margin: 0 auto;
+  aspect-ratio: 1/1;
   display: grid;
   place-items: center;
   place-content: center;
@@ -199,13 +202,14 @@ h1 {
   );
 }
 .firstImg {
-  width: calc(13em + 9vw);
+  width: 55vw;
+  aspect-ratio: 1/1;
   border-radius: 250px 250px 0px 0px;
 }
 .secondImg {
   position: absolute;
-  justify-self: left;
-  width: calc(7em + 8vw);
+  justify-self: baseline;
+  width: 33vw;
   border-radius: 250px 250px 0px 0px;
 }
 /* home main second section */
@@ -218,10 +222,10 @@ h1 {
   text-align: center;
 }
 .testcontainer {
-  width: 80%;
+  width: auto;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
   gap: 5vw;
 }
 .testcontainer div {
@@ -229,6 +233,8 @@ h1 {
   flex-direction: column;
   gap: 1.5em;
   align-items: center;
+  border-left: solid 1px var(--headings);
+  padding-left: 2em;
 }
 .testcontainer div:first-child {
   border: none;
@@ -242,21 +248,10 @@ h1 {
 }
 
 /* home main third section */
-.sect3,
-.sect5 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 3em;
-  max-width: calc(80% + 2vw);
+.sect3 {
+  max-width: calc(70% + 2vw);
+  aspect-ratio: 7/0.6;
   margin: 3em auto 1em;
-  justify-content: center;
-}
-.sect3 div,
-.sect5 div {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  gap: 1em;
 }
 .sect3 h2 {
   text-align: center;
@@ -273,37 +268,27 @@ h1 {
   font: var(--button-text);
   text-align: center;
 }
-.container2 {
-  width: calc(17em + 4vw);
-  margin: 0 auto;
-  aspect-ratio: 1/1;
-  display: grid;
-  place-items: center;
-  place-content: center;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #e89923 0%,
-    rgba(232, 153, 35, 0) 100%
-  );
+.sect3 div:first-child {
+  margin-bottom: 3em;
 }
-.thirdImg,
-.fourthImg {
-  max-width: 70%;
+.thirdImg {
+  width: 50vw;
   margin: 0 auto;
 }
-
 .sect3 span {
   color: var(--high-light);
 }
-
+.sect3 p {
+  margin: 2em auto;
+}
 /* home main fourth section */
 .sect4 h2 {
   text-align: center;
   font-weight: 400;
-  margin: 2em auto 0;
+  margin: 1em auto;
 }
 .sect4 ul {
-  margin: 1em 3em;
+  margin: calc(3em + 1vw);
   display: flex;
   flex-flow: row wrap;
   gap: calc(1em + 1vw);
@@ -321,33 +306,14 @@ h1 {
   max-width: 3em;
 }
 /* home main fifth section */
-.services {
-  width: 90%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 5vw;
-}
-.services div {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-  align-items: center;
-}
-.services div div,
-.services div:first-child {
-  border-left: none;
-  padding: 0%;
-}
 .services h3 {
   font-size: 1.3em;
   font-weight: 400;
-  margin: 2em auto;
 }
 .services ul {
   display: flex;
   flex-flow: column nowrap;
-  gap: 1em;
+  gap: 1.5em;
 }
 .services li {
   list-style: disc;
@@ -357,6 +323,24 @@ h1 {
   text-decoration: underline;
   font: bold var(--captions);
   display: block;
+}
+/* home main fifth section */
+.sect5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5em;
+  max-width: calc(80% + 2vw);
+  margin: 3em auto 1em;
+  justify-content: center;
+}
+.sect5 div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 1em;
+}
+.fourthImg {
+  max-width: 100%;
 }
 
 /*---------  PRODUCT LIST STYLES ---------*/
@@ -732,6 +716,14 @@ h1 {
   margin-top: 8px;
   margin-bottom: 30px;
 }
+/* ------------about therapy page styles--------------- */
+#aboutTherapyMain {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(323.5px, 1fr));
+}
+#aboutTContent1 {
+  margin: 10% 10% 1% 10%;
+}
 
 #aboutTContent1 p {
   margin-top: 1%;
@@ -882,26 +874,35 @@ h2 {
     font: var(--button-text);
   }
 
+  .firstImg {
+    width: 35vw;
+  }
+  .secondImg {
+    width: 20vw;
+  }
   /* home page section 2 style */
   .testcontainer {
     max-width: 90%;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   }
-  /* home page section 3 style */
-  .testcontainer div {
-    border-left: solid 1px var(--headings);
-    padding-left: 2em;
+  #aboutTherapyMain {
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  .testcontainer div:last-child {
-    border: none;
+  #aboutTherapyMain .tablet {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
   }
-}
-
-@media screen and (min-width: 674px) {
-  /* home page section 4 style */
-  .services div {
-    border-left: solid 1px var(--headings);
-    padding-left: 2em;
+  #aboutTherapyMain .tablet h1 {
+    align-self: center;
+    padding-bottom: 5%;
+  }
+  #aboutTherapyMain .tablet .gradientBackground {
+    grid-column: 2/2;
+    grid-row: 1 / span 2;
+  }
+  #aboutTherapyMain .tablet blockquote {
+    grid-column: span 2;
   }
 }
 /* ------------medium tablet styles--------------- */
@@ -969,7 +970,92 @@ h2 {
   .dropDown:hover > .submenu {
     display: block;
   } */
-
+  /* ------------about therapy page styles--------------- */
+  #aboutTContent2 p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .gridLaptopSize {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.1fr 1fr;
+    margin: 10% 0 10% 0;
+    align-items: center;
+  }
+  .gridLaptopSize .LaptopSizeImg {
+    grid-row: span 2;
+  }
+  .laptopSize img {
+    width: 85%;
+  }
+  .imgSize img {
+    width: 50%;
+    margin-bottom: 10%;
+  }
+  .h2LaptopSizeGrid {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .laptopSizeGridColumn {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .laptopSizeGridColumn p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .gridLayoutLaptopHeal {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .gridLayoutLaptopHeal p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .middle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .gridLayoutLaptopHeal .gridPharagraph {
+    grid-column: 1;
+    margin: 10% 0 0 10%;
+  }
+  .gridLayoutLaptopHeal .gradientBackground {
+    grid-column: 2;
+  }
+  .gridLayoutLaptopHeal h2 {
+    grid-column: 1;
+  }
+  .hiddenH2Small {
+    display: contents;
+  }
+  .grid {
+    display: contents;
+  }
+  .hiddenH2Laptop {
+    display: none;
+  }
+  .gridLayoutBenefitLaptop {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  .gridLayoutBenefitLaptop img {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  #aboutTContent2 {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  .SmallerImg img {
+    width: 90%;
+  }
   /* home page section 2 style */
   .testcontainer {
     max-width: 90%;
@@ -987,9 +1073,77 @@ h2 {
   .book {
     margin-left: calc(1.3em + 1vw);
   }
+  .laptopSize {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+  }
+  .laptopSize img {
+    width: 70%;
+  }
+  #benefits .iconLaptopSize {
+    width: 10%;
+  }
+  #benefits .alone {
+    width: 5%;
+  }
   /* home page style sect 4 */
   .sect4 ul {
-    margin: 3em 4em;
+    margin: calc(6em + 1vw);
+  }
+  /* ------------about therapy page styles--------------- */
+  #aboutTContent2 p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .gridLaptopSize {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.1fr 1fr;
+    margin: 10% 0 0 0;
+    align-items: center;
+  }
+  .gridLaptopSize .LaptopSizeImg {
+    grid-row: span 2;
+  }
+  .laptopSize img {
+    width: 85%;
+  }
+  .imgSize img {
+    margin-bottom: 10%;
+  }
+  .h2LaptopSizeGrid {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .laptopSizeGridColumn {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .gridLayoutLaptopHeal {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin: 0;
+    padding: 0;
+  }
+  .gridLayoutLaptopHeal .gridPharagraph {
+    grid-column: 1;
+    margin: 10% 0 0 10%;
+  }
+  .gridLayoutLaptopHeal .gradientBackground {
+    grid-column: 2;
+  }
+  .gridLayoutLaptopHeal h2 {
+    grid-column: 1;
+  }
+  .hiddenH2Small {
+    display: contents;
+  }
+  .grid {
+    display: contents;
+  }
+  .hiddenH2Laptop {
+    display: none;
   }
 }
 @media screen and (min-width: 960px) {
@@ -1078,7 +1232,6 @@ h2 {
   .bookbutton {
     padding: 0.1em 0.8em;
   }
-
   .secondImg {
     width: 18vw;
     top: 40vh;
@@ -1086,23 +1239,6 @@ h2 {
   .testcontainer {
     gap: 3vw;
   }
-  .testcontainer {
-    gap: 3vw;
-  }
-  .sect4 ul li {
-    flex: 1 1 30%;
-  }
-  .testcontainer div:last-child {
-    border-left: solid 1px var(--headings);
-    padding-left: 2em;
-  }
-
-  /* home page style fifth section */
-  .testcontainer.services {
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 5vw;
-  }
-}
   /* -----------------about Therapy page stlyes ----------------- */
   #benefits {
     display: grid;
@@ -1208,8 +1344,20 @@ h2 {
     grid-column: 2;
   }
   /* ----------------- page stlyes ----------------- */
-  
-/* destop styles */
+  .testcontainer {
+    gap: 3vw;
+  }
+  .sect4 ul li {
+    flex: 1 1 30%;
+  }
+
+  /* home page style fifth section */
+  .testcontainer.services {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 5vw;
+  }
+}
+/* -----------------destop styles -----------------*/
 @media screen and (min-width: 1200px) {
   .page-headings {
     font-size: 50px;
