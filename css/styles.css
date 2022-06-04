@@ -179,12 +179,14 @@ nav .fa-chevron-up {
 
 .bookbutton {
   color: var(--bcw);
-  padding: 7px 30px;
+  padding: 15px 30px;
   font: var(--button-text);
   text-align: center;
   width: 180px;
   background: linear-gradient(180deg, #e89a26 0%, #ebaf55 100%);
   border-radius: 15px;
+  display: block;
+  margin-top: 30px;
 }
 .container {
   display: grid;
@@ -1278,6 +1280,10 @@ blockquote {
   /* .logo {
     flex-basis: calc(10rem + 2vw);
   } */
+
+  .bookbutton {
+    padding: 5px 30px;
+  }
   .book {
     margin-left: calc(1.3em + 1vw);
   }
