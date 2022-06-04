@@ -89,6 +89,7 @@ nav .icon {
   top: 0px;
   height: 100vh;
   padding: 60px 40px;
+  z-index: 15;
 }
 
 .close-nav-icon {
