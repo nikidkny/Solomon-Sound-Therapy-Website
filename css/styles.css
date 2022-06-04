@@ -150,6 +150,7 @@ nav .fa-chevron-up {
 
 .services-nav-dropdown ul {
   margin-bottom: 0px;
+  z-index: 10;
 }
 
 .services-nav-dropdown ul li {
@@ -583,7 +584,7 @@ nav .fa-chevron-up {
 }
 
 .book-session-container {
-  padding: 50px 10vw 30px 10vw;
+  padding: 50px 10vw 80px 10vw;
   font-family: "Lato", sans-serif;
 }
 
