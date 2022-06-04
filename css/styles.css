@@ -925,10 +925,6 @@ footer {
 }
 /* ------------small tablet styles--------------- */
 
-.container {
-  position: relative;
-  width: 100%;
-}
 #aboutTContent1 .gradientBackground {
   grid-row: 4;
 }
