@@ -1248,6 +1248,10 @@ blockquote {
   .sect4 ul li {
     flex: 1 1 30%;
   }
+  /* home page section 3 style */
+  .carouselCell {
+    padding: 0 2em;
+  }
 
   /* -----------------about Therapy page stlyes ----------------- */
   #benefits {
