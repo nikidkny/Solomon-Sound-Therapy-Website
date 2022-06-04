@@ -11,7 +11,7 @@
   --high-light: #e89923;
   --active-button: #ffd552;
   /* fonts */
-  --button-text: bolder 0.8rem / 3vw "Lato", sans-serif;
+  --button-text: 0.8rem / 3vw "Lato", sans-serif;
   --captions: small-caps calc(0.5em + 0.5vw) / 2vw "Lato", sans-serif;
 }
 
@@ -128,8 +128,6 @@ nav .book-now-button-small {
   background: linear-gradient(180deg, #e89a26 0%, #ebaf55 100%);
   border-radius: 15px;
   color: white;
-  width: 160px;
-  height: 50px;
   font-weight: 700;
   text-align: center;
   font: 12px "Lato", sans-serif;
@@ -178,16 +176,15 @@ nav .fa-chevron-up {
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
   gap: 2em;
 }
+
 .bookbutton {
   color: var(--bcw);
-  display: block;
-  padding: 0.6em 0.8em;
+  padding: 7px 30px;
   font: var(--button-text);
   text-align: center;
-  border: solid 2px var(--high-light);
-  width: calc(9em + 2vw);
-  background-color: var(--high-light);
-  border-radius: 10px;
+  width: 180px;
+  background: linear-gradient(180deg, #e89a26 0%, #ebaf55 100%);
+  border-radius: 15px;
 }
 .container {
   display: grid;
@@ -1049,18 +1046,16 @@ blockquote {
   /* home page section 1 style */
   .sect1 div:first-child {
     gap: 4vh;
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
   }
   h1 {
     font: bold calc(1.3em + 1vw) / 5vh "Philosopher", sans-serif;
   }
   .sect1 p {
-    font: /* 1rem destop size */ 1rem / 3vw "Lato", sans-serif;
-  }
-  .bookbutton {
-    padding: 0.4em 0.5em;
-    border-radius: 10px;
-    font: var(--button-text);
+    font: /* 1rem destop size */ 1.1em / 3vw "Lato", sans-serif;
+    line-height: 1.5em;
   }
 
   .firstImg {
@@ -1429,16 +1424,14 @@ blockquote {
   }
 
   h1 {
-    font: bold calc(1.3em + 1vw) / 5vh "Philosopher", sans-serif;
+    font: bold calc(2em + 1vw) / 5vh "Philosopher", sans-serif;
+    line-height: 3.3rem;
   }
   /* home page section 1 style */
 
   .sect1 div:first-child {
     gap: 4vh;
     justify-content: center;
-  }
-  .bookbutton {
-    padding: 0.1em 0.8em;
   }
   .secondImg {
     width: 18vw;
