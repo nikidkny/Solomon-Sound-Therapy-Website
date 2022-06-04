@@ -223,8 +223,8 @@ h1 {
   margin: 1em;
 }
 .carouselCell {
-  width: 18em;
-  padding: 0 1em;
+  width: 22em;
+  padding: 0 3em;
   display: flex;
   flex-direction: column;
   gap: 1em;
