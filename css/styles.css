@@ -170,12 +170,23 @@ nav .fa-chevron-up {
 }
 
 /* home main first section */
+/* home main first section */
 .sect1 {
   max-width: calc(80% + 2vw);
   margin: 2em auto 3em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
   gap: 2em;
+}
+
+.sect1 div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 7vw;
+}
+
+.sect1 h1 {
+  color: var(--headings);
 }
 
 .bookbutton {
