@@ -41,6 +41,7 @@ li {
 h1 {
   font: /* 4.375rem destop size */ bold calc(1.4em + 1vw) / 7vh "Philosopher",
     sans-serif;
+  line-height: 3.3rem;
 }
 h2 {
   font: /* 3.125rem destop size */ bold calc(1.3em + 1vw) / 6vh "Philosopher",
