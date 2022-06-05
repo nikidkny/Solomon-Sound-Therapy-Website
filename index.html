@@ -6,52 +6,104 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="This is the groups 404 second semester exam project in MMD at KEA 2022 ">
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
   <script src="https://kit.fontawesome.com/585e945e26.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <title>Solomon Sound Therapy</title>
 </head>
 
 <body>
-
   <header>
-    <div class="navMobil">
-      <a href=""><img class="logoImg" src="./images/SolomonLogo.svg" alt="Solomon Logo"></a>
-      <a class="hamburguer" href="#navBar" aria-label="Open main menu.">
-        <svg viwBox="0 0 10 10">
-          <rect x="10" y="10" width="36" height="4" />
-          <rect x="10" y="20" width="36" height="4" />
-          <rect x="10" y="30" width="36" height="4" />
-        </svg></a>
-    </div>
-    <nav id="navBar">
-      <a href="" class="logo"><img class="logoImg" src="./images/SolomonLogo.svg" alt="Solomon Logo"></a>
-      <ul>
-        <li><a id="home" href="#">HOME</a></li>
-        <li class="dropDown"><a href="">SERVICES<i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a>
-          <ul class="submenu">
-            <li><a href="">Therapies</a></li>
-            <li><a href="">Therapies</a></li>
-            <li><a href="">Therapies</a></li>
-            <li><a href="">Therapies</a></li>
-            <li><a href="">Therapies</a></li>
-            <li><a href="">Therapies</a></li>
-            <li><a href="">Therapies</a></li>
-          </ul>
-        </li>
-        <li><a href="">SOUND THERAPY<i class="fa-solid fa-chevron-down" aria-hidden="true"></i></a></li>
-        <li><a href="">ABOUT</a></li>
-        <li class="book"><a href="">BOOK NOW<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a>
-        </li>
-        <li><a href=""><i class="fa-solid fa-cart-shopping" aria-hidden="true">.</i></a>
-        </li>
-      </ul>
-      <a class="close" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
-          class="bi bi-x" viewBox="0 0 16 16">
-          <path
-            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-        </svg></a>
+    <nav class="navbar">
+      <a href="">
+        <img src="images/SolomonLogo.svg" alt="header-logo" width="40" />
+      </a>
+      <a href="javascript:void(0);" class="icon" aria-label="burger-menu">
+        <i class="fa fa-bars fa-xl"></i>
+      </a>
+      <div class="mobile-nav">
+        <div class="close-nav-icon">
+          <a
+            href="javascript:void(0);"
+            class="close-nav"
+            aria-label="close-nav"
+          >
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+          </a>
+        </div>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="javascript:void(0);" class="services-dropdown-link"
+              >Services <i class="fa-solid fa-chevron-down"></i
+              ><i class="fa-solid fa-chevron-up"></i
+            ></a>
+            <div class="services-nav-dropdown">
+              <ul>
+                <li class="service-link">
+                  <a href="html/product-list.html" aria-label="service-nav-link"
+                    >All Services</a
+                  >
+                </li>
+                <li class="service-link">
+                  <a
+                    href="html/product.html?id=627ec08a8d10d405000610e0"
+                    aria-label="service-nav-link"
+                    >Discovery Session</a
+                  >
+                </li>
+                <li class="service-link">
+                  <a
+                    href="html/product.html?id=627ec2b08d10d4050006112b"
+                    aria-label="service-nav-link"
+                    >Sleep Better</a
+                  >
+                </li>
+                <li class="service-link">
+                  <a
+                    href="html/product.html?id=627ec4068d10d4050006116d"
+                    aria-label="service-nav-link"
+                    >Introductory Therapy Session</a
+                  >
+                </li>
+                <li class="service-link">
+                  <a
+                    href="html/product.html?id=627ec4f38d10d405000611a4"
+                    aria-label="service-nav-link"
+                    >Healthy Money</a
+                  >
+                </li>
+                <li class="service-link">
+                  <a
+                    href="html/product.html?id=627eca2e8d10d40500061273"
+                    aria-label="service-nav-link"
+                    >Heal Trauma Now</a
+                  >
+                </li>
+                <li class="service-link">
+                  <a href="html/product.html?id=627ecd878d10d40500061305"
+                    >Get More Clients</a
+                  >
+                </li>
+                <li class="service-link">
+                  <a
+                    href="html/product.html?id=627ecb5e8d10d405000612a4"
+                    aria-label="service-nav-link"
+                    >Sound Meditation</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="html/about-therapy.html">Sound Therapy</a></li>
+          <li><a href="html/about-me.html">About</a></li>
+        </ul>
+        <a href="html/product-list.html" class="book-now-button-small"
+          >BOOK NOW <i class="fa-solid fa-chevron-right"></i
+        ></a>
+      </div>
     </nav>
-
   </header>
   <main class="mainh">
     <section class="sect1">
@@ -60,7 +112,8 @@
         <p>With the use of my voice I use the soul voice® method to help people eliminate stress, anxiety, worries and
           get
           better sleep.</p>
-        <a class="bookbutton" href="">BOOK NOW<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a>
+        <a class="bookbutton" href="./html/product-list.html">BOOK NOW<i class="fa-solid fa-chevron-right"
+            aria-hidden="true"></i></a>
       </div>
       <div class="container">
         <img class="firstImg" src="./images/firstImg.jpg" alt="Judy Solomon">
@@ -69,30 +122,64 @@
     </section>
     <section class="sect2">
       <h2>Testimonials</h2>
-      <div class="testcontainer">
-        <div>
+      <div class="mainCarousel">
+        <div class="carouselCell">
+          <i class="fa-solid fa-quote-left"></i>
           <img class="testim1" src="./images/testimonials1.jpg" alt="Teestimony Image">
-          <h3> Caroline Sterling Burdulis</h3>
+          <h3>Caroline Sterling Burdulis </h3>
           <p class="caption">Business Strategist/Coach/Trainer/Speaker</p>
           <p>Her skills are incredible! Even after struggling with constant fatigue and terrible sleep over the last two
             decades I feel renewed and energised and both my health and business improve with every session. She is my
-            secret weapon for growing my business!</p>
+            secret weapon for growing my business!</p><i class="fa-solid fa-quote-right"></i>
         </div>
-        <div>
-          <img class="testim1" src="./images/testimonials1.jpg" alt="Teestimony Image">
-          <h3> Caroline Sterling Burdulis</h3>
-          <p class="caption">Business Strategist/Coach/Trainer/Speaker</p>
-          <p>Her skills are incredible! Even after struggling with constant fatigue and terrible sleep over the last two
-            decades I feel renewed and energised and both my health and business improve with every session. She is my
-            secret weapon for growing my business!</p>
+        <div class="carouselCell">
+          <i class="fa-solid fa-quote-left"></i>
+          <img class="testim1" src="./images/testimonials2.jpg" alt="Teestimony Image">
+          <h3> Ilona Marquard</h3>
+          <p class="caption">Kundalini – Yoga Teachereaker</p>
+          <p>Judy is a powerful healer who, by wonder always gives me the healing and inspiration that I did not know I
+            needed. She has helped me to find my own strength and create visions for leading a more complete life,
+            aligned with my heart, creativity, spirit and personal path.</p><i class="fa-solid fa-quote-right"></i>
         </div>
-        <div>
-          <img class="testim1" src="./images/testimonials1.jpg" alt="Teestimony Image">
-          <h3> Caroline Sterling Burdulis</h3>
-          <p class="caption">Business Strategist/Coach/Trainer/Speaker</p>
-          <p>Her skills are incredible! Even after struggling with constant fatigue and terrible sleep over the last two
-            decades I feel renewed and energised and both my health and business improve with every session. She is my
-            secret weapon for growing my business!</p>
+        <div class="carouselCell">
+          <i class="fa-solid fa-quote-left"></i>
+          <img class="testim1" src="./images/testimonials3.jpg" alt="Teestimony Image">
+          <h3> LieselTeversham</h3>
+          <p class="caption">Coach/Healer/Teacher/Author</p>
+          <p>I had a most awesome sound healing session with Judy!Her presence was so welcoming, calming, reassuring and
+            safe.I brought some physical issues I'd been having trouble with. At the end of the session the one problem
+            (a stomach issue) was feeling SO much better, and an hour later I could no longer feel it.</p><i
+            class="fa-solid fa-quote-right"></i>
+        </div>
+        <div class="carouselCell">
+          <i class="fa-solid fa-quote-left"></i>
+          <img class="testim1" src="./images/testimonials4.jpg" alt="Teestimony Image">
+          <h3> Kellita Maloof</h3>
+          <p class="caption">Performing- Burlesque Mentor</p>
+          <p>Thank you, Judy! You access your sound from such a deep and powerful place.
+            It felt very shamanic. Your voice was communicating and transmuting my beliefs and experience in a way that
+            words alone would have trouble doing. I continue to experience the healing.
+            Bowing in your direction in gratitude!</p><i class="fa-solid fa-quote-right"></i>
+        </div>
+        <div class="carouselCell">
+          <i class="fa-solid fa-quote-left"></i>
+          <img class="testim1" src="./images/testimonials5.jpg" alt="Teestimony Image">
+          <h3> Mija Byung</h3>
+          <p class="caption">Architect</p>
+          <p>To sound with a group of women was a powerful experience for me. Despite of our differences both in
+            personality and energetically, the Sound healing & meditation Circle made it possible for us to break down
+            all our limitations / boundaries and allowed us to easily let go of ourselves to create a comfortable and
+            relaxed space to be. </p><i class="fa-solid fa-quote-right"></i>
+        </div>
+        <div class="carouselCell">
+          <i class="fa-solid fa-quote-left"></i>
+          <img class="testim1" src="./images/testimonials6.jpg" alt="Teestimony Image">
+          <h3> Kristella Høst Normark</h3>
+          <p class="caption">Psychotherapist/Speaker</p>
+          <p>he embrace of Judy’s voice has on more than one occasion carried me through deep layers of myself, healed
+            and instigated new processes and sped up ongoing ones. Judy’s sound therapy is a welcome break from talk
+            therapy and over identification with one's stories – it helped me to surrender to the session and to let the
+            voice and the sounds do its job, which Judy masters perfectly.</p><i class="fa-solid fa-quote-right"></i>
         </div>
       </div>
     </section>
@@ -106,10 +193,10 @@
             level. Different instruments can be used when performing sound healing therapy, but I heal with my voice,
             using The Soul voice® method.</p>
         </p>
-        <a class="secondarybutton" href="">READ MORE<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a>
+        <a class="secondarybutton" href="./html/about-therapy.html">READ MORE<i class="fa-solid fa-chevron-right"
+            aria-hidden="true"></i></a>
       </div>
-      <div class="container">
-
+      <div class="container2">
         <img class="thirdImg" src="./images/thirdImg.jpg" alt="Session Image">
       </div>
     </section>
@@ -125,61 +212,70 @@
     </section>
     <section class="sect2">
       <h2>Services</h2>
-      <div class="testcontainer services">
+      <div class="services">
         <div>
-          <h3>Sleep Coaching & Healing</h3>
-          <ul>
-            <li>Are you having difficulty going to sleep?</li>
-            <li>Are you waking up in the middle of the night with trouble returning to sleep?</li>
-            <li>Are you waking up too early in the morning? Or earlier than planned and waking up not feeling fully
-              rested?</li>
+          <div>
+            <h3>Sleep Coaching & Healing</h3>
+            <ul>
+              <li>Are you having difficulty going to sleep?</li>
+              <li>Are you waking up in the middle of the night with trouble returning to sleep?</li>
+              <li>Are you waking up too early in the morning? Or earlier than planned and waking up not feeling fully
+                rested?</li>
+            </ul>
             <p>I specialize in helping business owners sleep better, so that they wake up feeling well rested and
               restored to grow their businesses with ease and grace, while enjoying their family life.</p>
-            <a href="">LEARN MORE ABOUT MY SERVICES HERE</a>
-          </ul>
-        </div>
-        <div>
-          <h3>
-            Healthy Money Coaching</h3>
-          <ul>
-            <li>Are your money blocks holding you back from achieving your dreams?</li>
-            <li>Are you tired of putting your dreams on hold, because of not having money?</li>
-            <li>Are you just tired of feeling broke no matter how much you earn, because it just keeps on slipping away?
-            </li>
+            <a href="./html/product-list.html">LEARN MORE ABOUT MY SERVICES HERE</a>
+          </div>
+          <div>
+            <h3>
+              Healthy Money Coaching</h3>
+            <ul>
+              <li>Are your money blocks holding you back from achieving your dreams?</li>
+              <li>Are you tired of putting your dreams on hold, because of not having money?</li>
+              <li>Are you just tired of feeling broke no matter how much you earn, because it just keeps on slipping
+                away?
+              </li>
+            </ul>
             <p>Do you want to eliminate the pain and struggle you have with money and finally feel free, expansive and
               secure enough to be a Money magnet?
             </p>
-            <a href="">LEARN MORE ABOUT MY SERVICES HERE</a>
-          </ul>
-        </div>
-        <div>
-          <h3>Business Growth Coaching</h3>
-          <ul>
-            <li>Are you tired of attracting clients that cant afford you or won't pay you what you want?</li>
-            <li>Are you tired of not making the money you deserve despite all the amazing testimonials that you have on
-              your website?</li>
-            <li>Are you struggling to get noticed?</li>
-            <p>You might have been working to grow your business for a while now and things aren't happening as fast as
-              you want, it's possible that something might be holding you back or slowing you down.
-            </p>
-            <a href="">LEARN MORE ABOUT MY SERVICES HERE</a>
-          </ul>
+            <a href="./html/product-list.html">LEARN MORE ABOUT MY SERVICES HERE</a>
+          </div>
         </div>
 
         <div>
-          <h3>Heal Trauma Now</h3>
-          <ul>
-            <li>Are you tired of struggling to create a life of balance, joy and harmony?</li>
-            <li>Do you feel like your goals are always just out of reach, while it seems others achieve success after
-              success?</li>
+          <div>
+            <h3>Business Growth Coaching</h3>
+            <ul>
+              <li>Are you tired of attracting clients that cant afford you or won't pay you what you want?</li>
+              <li>Are you tired of not making the money you deserve despite all the amazing testimonials that you have
+                on
+                your website?</li>
+              <li>Are you struggling to get noticed?</li>
+            </ul>
+            <p>You might have been working to grow your business for a while now and things aren't happening as fast
+              as
+              you want, it's possible that something might be holding you back or slowing you down.
+            </p>
+            <a href="./html/product-list.html">LEARN MORE ABOUT MY SERVICES HERE</a>
+          </div>
+          <div>
+            <h3>Heal Trauma Now</h3>
+            <ul>
+              <li>Are you tired of struggling to create a life of balance, joy and harmony?</li>
+              <li>Do you feel like your goals are always just out of reach, while it seems others achieve success after
+                success?</li>
+            </ul>
             <p>
-              The help you need is right here, inside Heal Trauma Now - Your Inner Path to Divine Purpose and Effortless
+              The help you need is right here, inside Heal Trauma Now - Your Inner Path to Divine Purpose and
+              Effortless
               Abundance
-              This private session will allow you to unlock the emotional blueprint your soul wants to follow, using the
+              This private session will allow you to unlock the emotional blueprint your soul wants to follow, using
+              the
               unique Soul Voice® technique.
             </p>
-            <a href="">LEARN MORE ABOUT MY SERVICES HERE</a>
-          </ul>
+            <a href="./html/product-list.html">LEARN MORE ABOUT MY SERVICES HERE</a>
+          </div>
         </div>
       </div>
     </section>
@@ -189,51 +285,83 @@
         <p>A 20 min discovery session over Zoom to help you get clarity around the different areas of your life that
           need extra attention, so that you can create the lifestyle of your dreams.</p>
         <p>Register today and get 20 minutes discovery session for <span>FREE!</span></p>
-        <a class="bookbutton" href="">BOOK NOW<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a>
+        <a class="bookbutton" href="./html/product-list.html">BOOK NOW<i class="fa-solid fa-chevron-right"
+            aria-hidden="true"></i></a>
       </div>
-      <div class="container"><img class="fourthImg" src="./images/fourthImg.jpg" alt="Pre Session"></div>
+      <div class="container2"><img class="fourthImg" src="./images/fourthImg.jpg" alt="Pre Session"></div>
     </section>
 
   </main>
-  <!--  <footer>
-    <section>
-      <a href=""><img class="logoImg" src="./images/SolomonLogo.svg" alt="Solomon Logo"></a>
-      <h2>Solomon Sound Therapy</h2>
-      <ul>
-        <li>Judy Solomon</li>
-        <li>Jagtvej 17, Stv</li>
-        <li>DK-2200 København. N</li>
-        <li>Tlf: +45 26 66 33 38</li>
-        <li>CVR nr: 33814860</li>
-        <li>judy@solomonsoundtherapy.dk</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Sign up to my newsletter</h2>
-      <p>Sign up to my newsletter and stay up to date with my latest sessions and promotions</p>
-      <form action="" method="get">
-        <input type="text" id="email" name="email" value="Enter a valid email address">
-        <input type="submit" name="name" value="submit">
-      </form>
-    </section>
-    <section>
-      <h2>Follow me</h2>
-      <ul>
-        <li><img src="./images/instagramlogo.svg" alt=""> </li>
-        <li><img src="./images/facebooklogo.svg" alt=""> </li>
-        <li><img src="./images/youtubelogo.svg" alt=""> </li>
-        <li><img src="./images/linkedinlogo.svg" alt=""> </li>
+  <footer>
+    <div class="footer-logo-title-info-container">
+      <div>
+        <a href="index.html"
+          ><img src="images/footer-logo.svg" alt="logo" width="140"
+        /></a>
+        <h4>Solomon Sound Therapy</h4>
+      </div>
+      <div class="footer-info">
         <ul>
-          <li>Services</li>
-          <li>Sound therapy</li>
-          <li>Sound meditation</li>
-          <li>About</li>
+          <li>Judy Solomon</li>
+          <li>Jagtvej 17, Stv</li>
+          <li>DK-2200 København. N</li>
+          <li>Tlf: +45 26 66 33 38</li>
+          <li><CVR nr: 33814860/li></li>
+          <li>judy@solomonsoundtherapy.dk</li>
         </ul>
-      </ul>
-    </section>
-    <p>Copyright © 2002 - 2022 Solomon sound Therapy. All rights reserved</p>
-  </footer> -->
-  <script src="./js/frontPage.js"></script>
+      </div>
+    </div>
+    <div class="newsletter-form-container">
+      <h3>Sign up to my newsletter</h3>
+      <p>
+        Sign up to my newsletter and stay up to date with my latest sessions
+        and promotions
+      </p>
+      <form action="">
+        <input type="text" placeholder="Enter a valid email address" />
+        <button>SUBMIT</button>
+      </form>
+    </div>
+    <div class="socials-footer-navigation-container">
+      <h3>Follow me</h3>
+      <div class="social-icons-container">
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/solomonsoundtherapy/" target="_blank"" aria-label="instagram-logo"
+              ><i class="fa-brands fa-instagram fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/solomonsoundtherapy" target="_blank" aria-label="facebook-logo"
+              ><i class="fa-brands fa-facebook-square fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCJK_xN9AJpi0GKoMLwf4vKg" target="_blank" aria-label="youtube-logo"
+              ><i class="fa-brands fa-youtube fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/judy-yodit-solomon/" target="_blank" aria-label="linkedin-logo"
+              ><i class="fa-brands fa-linkedin fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><a href="html/product-list.html">Services</a></li>
+          <li><a href="html/about-therapy.html">Sound Therapy</a></li>
+          <li><a href="html/about-me.html">About</a></li>
+          <li><a href="html/product-list.html">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="./js/navBar.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
