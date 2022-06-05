@@ -781,7 +781,7 @@ footer {
   padding: 80px 7vw 80px 7vw;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 60px;
+  column-gap: 120px;
 }
 
 .footer-logo-title-info-container h4 {
@@ -1286,13 +1286,19 @@ blockquote {
   .services-nav-dropdown ul li a {
     font-size: 14px;
   }
-}
 
-@media screen and (min-width: 818px) {
   .newsletter-form-container {
     margin-top: 0px;
   }
+}
 
+@media screen and (max-width: 900px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 818px) {
   .socials-footer-navigation-container {
     width: 25%;
   }
@@ -1612,6 +1618,7 @@ blockquote {
 
   footer {
     justify-content: space-between;
+    column-gap: 0px;
   }
 
   .socials-footer-navigation-container {
