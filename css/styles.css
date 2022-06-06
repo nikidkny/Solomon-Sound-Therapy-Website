@@ -1067,6 +1067,7 @@ blockquote {
 .aboutMeImgHidden {
   display: none;
 }
+
 /* ------------small tablet styles--------------- */
 @media screen and (min-width: 647px) {
   /* home page section 1 style */
