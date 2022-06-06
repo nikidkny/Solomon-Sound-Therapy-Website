@@ -1566,6 +1566,7 @@ blockquote {
     grid-column: span 2;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    column-gap: 60px;
     padding: 5% 0 5% 5%;
     align-items: center;
     justify-items: end;
@@ -1579,7 +1580,6 @@ blockquote {
   }
   .aboutMeLayoutSide {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
   }
   #qualifications li {
