@@ -399,7 +399,7 @@ nav .fa-chevron-up {
 /* home main fifth section */
 
 .fourthImg {
-  max-width: 60%;
+  width: 60%;
 }
 /*---------  PRODUCT LIST STYLES ---------*/
 
@@ -1076,6 +1076,7 @@ blockquote {
 .aboutMeImgHidden {
   display: none;
 }
+
 /* ------------small tablet styles--------------- */
 @media screen and (min-width: 647px) {
   /* home page section 1 style */
