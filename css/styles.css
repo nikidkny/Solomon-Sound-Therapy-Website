@@ -420,7 +420,7 @@ nav .fa-chevron-up {
 
 #product-list-container {
   margin-top: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   margin-left: 10vw;
   margin-right: 10vw;
   display: flex;
@@ -563,6 +563,14 @@ nav .fa-chevron-up {
   }
 }
 
+.cancellation-policy {
+  margin: 0px 10vw 60px 10vw;
+}
+
+.cancellation-policy h2 {
+  margin-bottom: 20px;
+}
+
 /*---------  SINGLE PRODUCT STYLES ---------*/
 
 .single-product-container {
@@ -647,6 +655,7 @@ nav .fa-chevron-up {
 
 .booking-process-container {
   margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .calendar-timeslots-container {
