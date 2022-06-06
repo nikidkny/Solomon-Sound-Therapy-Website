@@ -399,7 +399,7 @@ nav .fa-chevron-up {
 /* home main fifth section */
 
 .fourthImg {
-  max-width: 60%;
+  width: 60%;
 }
 /*---------  PRODUCT LIST STYLES ---------*/
 
@@ -420,7 +420,7 @@ nav .fa-chevron-up {
 
 #product-list-container {
   margin-top: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   margin-left: 10vw;
   margin-right: 10vw;
   display: flex;
@@ -563,6 +563,14 @@ nav .fa-chevron-up {
   }
 }
 
+.cancellation-policy {
+  margin: 0px 10vw 60px 10vw;
+}
+
+.cancellation-policy h2 {
+  margin-bottom: 20px;
+}
+
 /*---------  SINGLE PRODUCT STYLES ---------*/
 
 .single-product-container {
@@ -647,6 +655,7 @@ nav .fa-chevron-up {
 
 .booking-process-container {
   margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .calendar-timeslots-container {
@@ -781,7 +790,7 @@ footer {
   padding: 80px 7vw 80px 7vw;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 60px;
+  column-gap: 120px;
 }
 
 .footer-logo-title-info-container h4 {
@@ -1287,13 +1296,19 @@ blockquote {
   .services-nav-dropdown ul li a {
     font-size: 14px;
   }
-}
 
-@media screen and (min-width: 818px) {
   .newsletter-form-container {
     margin-top: 0px;
   }
+}
 
+@media screen and (max-width: 900px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 818px) {
   .socials-footer-navigation-container {
     width: 25%;
   }
@@ -1482,6 +1497,9 @@ blockquote {
     font-size: 1.5em;
     text-align: center;
   }
+  .secondBlockquote {
+    font-size: 1.5em;
+  }
   #benefits {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -1549,6 +1567,7 @@ blockquote {
     grid-column: span 2;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    column-gap: 60px;
     padding: 5% 0 5% 5%;
     align-items: center;
     justify-items: end;
@@ -1562,7 +1581,6 @@ blockquote {
   }
   .aboutMeLayoutSide {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
   }
   #qualifications li {
@@ -1613,6 +1631,7 @@ blockquote {
 
   footer {
     justify-content: space-between;
+    column-gap: 0px;
   }
 
   .socials-footer-navigation-container {
