@@ -836,7 +836,7 @@ footer {
   width: 90%;
 }
 
-.newsletter-form-container form input[type="text"] {
+.newsletter-form-container form input[type="email"] {
   padding: 15px;
   border-radius: 15px;
   border: 1px solid #ecc7a5;
@@ -844,7 +844,7 @@ footer {
   color: white;
 }
 
-.newsletter-form-container form input[type="text"]::placeholder {
+.newsletter-form-container form input[type="email"]::placeholder {
   color: #e7caaf;
 }
 
