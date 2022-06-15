@@ -1049,9 +1049,6 @@ blockquote {
 .gridLayoutLaptop h1 {
   margin-bottom: 5%;
 }
-#aboutMeMain img {
-  width: 60%;
-}
 #qualifications {
   background-color: var(--light-background);
   padding: 10%;
@@ -1383,7 +1380,7 @@ blockquote {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 6%;
   }
   .gridLayoutLaptopHeal .gridPharagraph {
     grid-column: 1;
@@ -1577,7 +1574,7 @@ blockquote {
   .gridLayoutMePage2 {
     grid-column: span 2;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.6fr 2fr;
     column-gap: 60px;
     padding: 5% 0 5% 9%;
     align-items: center;
@@ -1593,6 +1590,7 @@ blockquote {
   .aboutMeLayoutSide {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
   #qualifications li {
     margin-top: 1%;
