@@ -14,11 +14,10 @@ function handleClick() {
 }
 
 function handleNavData(sessions) {
-  var services = [];
+  // var services = [];
   sessions.forEach((session) => {
     // 1. Grap the template
-    const servicesTemplate =
-      document.querySelector("#services-template").content;
+    const servicesTemplate = document.querySelector("#services-template").content;
 
     // 2. Clone template
     const serviceClone = servicesTemplate.cloneNode(true);
